@@ -1,0 +1,3456 @@
+c:    -to change the drive 
+d:    -to change the drive
+cd    -change drive
+cd ..  -to go to previous folder
+cls  -to clear screen
+
+________________________________________________________________________________________________________________________________________________________________________
+// JAVA
+
+
+in class name first letter should be in upper case
+
+
+________________________________________________________________________________________________________________________________________________________________________
+///
+STRUCTURE OF JAVA PROGRAM: Java instructions are always written inside the class. class Class_Name
+
+{
+
+	public static void main(String[] args)
+
+	{
+
+		I/Statements
+
+	}
+
+	File name: Class_Name.java
+
+}
+
+NOTE:
+
+Every class in java must have a name, it is known as class name. Every class has a block, it is known as class block.
+________________________________________________________________________________________________________________________________________________________________________
+///
+
+IN CLASS BLOCK WE CAN CREATE
+
+• Variables
+
+Methods
+
+. Initializers
+
+These are said to be a members of a class.
+
+VARIABLE:
+
+Variable is a container which is used to store data.
+
+METHODS:
+
+It is a block of instructions which is used to perform a task INITIALIZERS :
+
+Initializes are used to execute the start-up instructions.
+
+
+////
+________________________________________________________________________________________________________________________________________________________________________
+TOKENS
+--are the smallest element of programing language which is used to compose instructions is known as tokens
+
+* there are three types of tokens
+  1)key words
+  2)identifiers
+  3)literals
+  
+  
+KEY WORDS
+
+-evry time they will be there in smaller case 
+-these are predifined words we have to write as it is
+
+there are 51 key words are there in java 
+-for example  --class,public,static,void
+
+   RULES:  IDENTIFIERS
+
+--identifiers should not start with numbers
+--program should not start with space
+--cant use any spesial charector exept underscore and doller
+--we cant use key word os the aidentifier
+--programmer canot change the meening of the keywords
+
+________________________________________________________________________________________________________________________________________________________________________  
+CONVENTION:
+  --  coding or industrial standerds to be followed by the programmer is known as convention.
+  ----Note: compiler dosnt validate the convention,
+  
+      -first letter should be capital
+      -if multi word the first word and second word should be start with the captal words
+      -in variable and methods that should start with lower case
+ 
+CONVENTIONS FOR METHODS AND VERIABLES:
+ 	Single word-Should be lover case
+ 	ex-addition,subtraction etc
+ 	
+ 	Multi word - first should be lover case remaining words should be start wiyth upper case
+ 	ex - squreRoot,etc,
+
+________________________________________________________________________________________________________________________________________________________________________
+  LITERALS :
+      -Literal is a data whitch we use in java
+      -it is an premitive value(single valued)
+      -data catogorized in to two types
+       1.Private values
+       2.Non Private values
+     
+   Primitive values :
+   	Single value data is known as primitive values
+   	ex-Numbers,charectors,boolean
+   	
+   	Number Literals :
+   	* integer number literals
+   		ex-1,2,3,etc
+   	* floting number literals
+   		ex- 2.3 , 1.0, 45.5 ,etc
+   CHARECTOR LITERALS:
+   	* Anything which is enclosed within a single quote(' ') is charector literals
+   	* The lenth of literals should be one.
+   	ex - 'a','B',etc..
+   BOOLEAN LITERALS :
+   	-Boolean literals are used to write logical values
+   	*true
+   	*false
+   	
+______________________________________________________________________________________________________________________________________________________________________
+ Types of primitive values 
+ 
+ 1)Number--
+ 	-integer-short,byte,int and log
+ 	 ---float-float and double
+ 2)Charector--
+ 	-anything enclosed in single quotes
+ 
+ 3)Boolians--
+ 	-True or False
+ 
+ 
+ String Literals-
+ 	-anything enclosed with double quote
+ 	-they are case sensitive
+ 	ex- "hello","a","1.1" etc ..
+ 	
+ 
+   Non primitive values :
+   	--Reference of an object is known as non primitive values(group of data)
+   	 ex-string details of object ,etc
+_______________________________________________________________________________________________________________________________________________________________________ 	
+  NUmbers ----integer|-short--1 byte
+  	  |	     |-byte --2 byte
+  	  |	     |-int  --4 byte
+  	  |	     |-long --8 byte
+  	  |     
+	  |	    
+  	  ----float----float--4byte
+ 	  |	   | 	  
+  	  |	   ----double--8byte
+  	  |
+  	  |---char----char--2byte
+  	  	  |
+  	  	  ----boolean--1byte
+  
+Data Type 	Size 		Description
+byte 		1 byte 		Stores whole numbers from -128 to 127
+short 		2 bytes 	Stores whole numbers from -32,768 to 32,767
+int 		4 bytes 	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+long 		8 bytes 	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float 		4 bytes 	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+double 		8 bytes 	Stores fractional numbers. Sufficient for storing 15 decimal digits
+boolean 	1 bit 		Stores true or false values
+char 		2 bytes 	Stores a single character/letter or ASCII values
+_______________________________________________________________________________________________________________________________________________________________________
+  VARIABLES AND DATATYPES
+
+DATATYPES
+
+• Datatypes are used to create variables of specific type. In java datatypes are classified into two types.
+
+1. Primitive datatypes
+
+2. Non-primitive datatypes 
+PRIMITIVE DATA TYPE:
+
+The data type which is used to create a variable to store primitive value such as numbers characters, boolean is known as primitive data type.
+
+NOTE:
+
+All primitive data types are keyword in java.
+
+________________________________________________________________________________________________________________________________________________________________________
+
+  VARIABLE:
+
+  Variable is a container which is used to store single value.
+	*Primitive variable
+	*Non-Primitive variable
+  
+  
+  PRIMITIVE VARIABLE:
+  	*The variable whitch is used to store a primitive value such as number,charector,boolean is known as primitive variable.
+  	*We can create primitive variable with the help of primitive data type.
+ 
+ Syntex to create primitive variable :
+ 	datatype identifier1,identifier2,...;
+ 	primitive datatype identifier1,identifier2,...;
+  
+  NON PRIMITIVE VARIABLE:
+	The variable whitch is used to store the a reference is known as non primitive variable.
+	It is also known as reference variable.
+	
+Syntex to create a non primitive variable :
+	Non primitive datatype identifier1,identifier2,...;
+
+	
+	SCOPE OF A VARIABLE:
+
+	*The visibility of a variable is known as scope of a variable. Based on scope of a variable we can categorize variable in three types
+
+	1. Local variable.
+
+	2. Static variable.
+
+	3. Non static variable (Instance).
+	
+_______________________________________________________________________________________________________________________________________________________________________
+
+LOCAL VARIABLE:
+
+	The variable declared inside a method block or any other block except class block is known as local variable.
+
+CHARACTERISTICS OF LOCAL VARIABLE:
+
+	-We can't use local variables without initialization, if we try to use local variable without initialization then we will get compile time error.
+	
+	-Local variables will not be initialized with default values.
+	
+	-The scope of the local variable is nested inside the block wherever it is declared,
+	 hence it can't be used outside the block.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+		OPERATOR
+
+	-Operators are predefined symbol which is used to perform specific task on the given data. The data given as a input to the operator is known as operand. 
+	 Based on the
+Based on the number of operand operator are further classified into the following
+
+	1)Unary operator
+	
+	2)Binary operator 
+
+	3)Ternary operator
+
+UNARY OPERATOR:
+
+	-The operator which can accept only one operand is known as unary operator.
+
+BINARY OPERATOR:
+
+	-The operator which can accept two operand is known as Binary operator.
+
+TERNARY OPERATOR:
+
+	-The operator which can accept three operand is known as Termary operator
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+CLASSIFICATION OF OPERATOR
+
+The operators can also be classified based on the task
+
+1) Arithmetic operator
+
+2) Assignment operator
+
+3) Relational Operator
+
+4) Logical operator
+
+5) Increment/Decrement operator
+
+6) Conditional operator
+
+7) Miscellaneous
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+TYPE CASTING:
+
+* The process of converting one type of data into another type is known as Type casting.
+
+There are two types of type casting:
+
+1) PRIMITIVE TYPE CASTING
+
+	1) Widening (Implicit)
+
+	2) Narrowing (Explicit)
+
+2) NON PRIMITIVE TYPECASTING
+
+	1) Upcasting (Implicit)
+
+	2) Downcasting (Explicit)
+
+_______________________________________________________________________________________________________________________________________________________________________
+PRIMITIVE TYPE CASTING :
+
+* The process of converting one primitive value into another primitive value is known as primitive type casting
+
+WIDENING:
+
+* The process of converting smaller range of primitive data type into larger range of primitive data type is called widening.
+
+* In widening process there is no data loss.
+
+* Since there is no data loss, compiler can implicitly do widening hence it i also known as auto widening.
+_______________________________________________________________________________________________________________________________________________________________________
+
+NARROWING:
+
+	-The process of converting larger range of primitive data type into smaller range of primitive data type is known as Narrowing.
+
+	-In narrowing process there is a possibility of data loss.
+
+	-Since there is a possibility of data loss, compiler does not do narrowing implicitly.
+
+	-It can be done explicitly by the programmer with the help of type cast operator.
+
+TYPECAST OPERATOR:
+
+	-It is a unary operator(Only one operand)
+	-Type cast operator is used to explicitly convert one datatypo into another data type.	
+_______________________________________________________________________________________________________________________________________________________________________
+
+NON PRIMITIVE TYPE-CASTING (DERIVED TYPE CASTING)
+
+	* The process of converting one reference type into another reference type is known as non-primitive or derived type casting.
+
+RULES TO ACHIEVE NON PRIMITIVE TYPE CASTING:
+
+	* We can convert one reference type into another reference type only if it satisfies the following condition,
+
+	* There must be an Is-A relation (Parent and child) exist between two references. . If the class/Interface has a common child.
+_______________________________________________________________________________________________________________________________________________________________________
+
+SESSION 3 ACTIVITY
+
+1. Write a java program to store and print your name, age, dateOfBirth, and contact number.
+
+2. Write a java program to convert character into a number.
+
+3. Write a java program to store int value into the byte, short, long, float, double, char type variable.
+
+4. Write a java program to convert the double value(56.09) into int type and print it.
+
+5. Write a java program to store char type data('A') inside the short and int type variable and print it.
+
+6. Write a java program to store boolean type data(true) inside the int type variable and print it.
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+METHODS :
+
+	-Method is block of instructions which is used to perform a specific task,
+	-It is used to transfer a data.
+	
+	
+	Syntex to define a methed :
+	
+	[access modifier][modifier] return type name([datatype var1,datatype var2, ...])
+	{
+	
+	
+	}
+	
+
+
+
+1) Method signature
+
+	-Method name 
+	-Formal argument
+
+2) Method declaration
+
+	. Access modifier
+
+	. Modifier
+
+	• Return type Signature
+
+3) Method definition
+
+	-Method declaration
+
+	-Method body / implementation /block
+	
+	
+_______________________________________________________________________________________________________________________________________________________________________
+MODIFIERS	
+	Modifiers are the keywords which are responsible to modify the charectoristic of the methods.
+	
+	
+EXAMPLE OF MODIFIERS
+
+	1. static
+	2. abstract
+	3. final
+	4. synchronized
+	5. volatile
+	6. transient
+	
+ACCESS MODIFIERS
+	Access modifiers are used to change the accessibility of a modifiers.
+	
+We have level of access modifiers
+
+1. private
+2. default
+3. protected
+4. public
+
+_______________________________________________________________________________________________________________________________________________________________________
+RETURN TYPE
+
+	* The method after execution can return a value back to the caller. 
+	* Therefore it is mandatory to specify what type of data returned by the method in
+	  the method declaration statement, This is done with the help of return type.
+
+Return type definition
+
+	* Return type is a data type which specify what type of data is returned by
+
+	  the method after execution.
+_______________________________________________________________________________________________________________________________________________________________________
+A method can have following return types
+
+1) void
+
+2) primitive data type
+
+3) non primitive data type
+
+VOID 
+	* void is a datatype which is used as a return type when the method returns nothing.
+	* It is a key word in java.
+	
+NOTE
+	* A method cant create inside a anothor method.
+	* A class can have any number of methods.
+
+	* A method will get executed only when it is called, we can call a method with the
+
+	  help of method call statement.
+
+METHOD CALL STATEMENT: 
+	-The statement which is used to call a method is known as method call statement.
+
+Syntax to create a method call statement: 
+
+	methodName([Actual arguments]);
+
+	-We can call a no argument method without passing actual argument in the method call statement
+
+
+METHOD CALL STATEMENT FLOW
+
+	 • Execution of calling method is paused
+	 
+	 • Control is transferred to the called method.
+
+	 • Execution of called method is begins. 
+	 
+	 • Once the execution of called method is completed the control is transferred back to the calling method. 
+	 
+	 • Execution of calling method resumes.
+
+
+CALLING METHOD :
+	-The method which is trying to call anothor method is known as calling method (caller).
+	
+CALLED METHOD :
+	-The method which is benig called by the caller is known as called method.
+_______________________________________________________________________________________________________________________________________________________________________
+
+MAIN METHOD:
+
+	-The execution of a java program always starts from main method defined as follows 
+	
+	public static void main(String[] args)
+	{
+	
+	}
+
+PURPOSE OF THE MAIN METHOD: 
+	• Start the execution
+
+	• Control the flow of the execution
+
+	• End of execution
+
+NOTE :
+
+	• A method can be executed only when it is called, we can call a method any number of times, therefore it is said to be code reusability. 
+	• Main method is always called by jvm.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+RETUN TYPE:
+
+	- is used to return the control to the main method 
+	
+	
+	
+TYPES OF METHODS:
+
+	-Based on of arguments, methods can be classified into two types, 
+	* No argument method
+	* Parameterized method 
+No argument method:
+
+	-A method which does not have formal argument is known as no argument method
+
+EXAMPLE:
+
+public static void demo()
+ {
+
+	System.out.println("demo() no argument method");
+ }
+
+
+PARAMETERIZED METHOD:
+
+	• The method which has formal argument is known as parameterized method. 
+	• Parameterized methods are used to accept the data.
+
+FORMAL ARGUMENT:
+
+	-A variable which is declared in a method declaration is known as formal argument. 
+
+ACTUAL ARGUMENT:
+
+	-The values passed in the method call statement is known as actual argument.
+_______________________________________________________________________________________________________________________________________________________________________
+
+RULE TO CALL THE PARAMETERIZED METHOD:
+
+	• The number of actual argument should be same as the number of formal arguments.
+
+	• The type of corresponding actual argument should be same as the type of formal argument, if not compiler 
+	  tries implicit conversion if it is not possible then we will get compile time error.
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+RETURN STATEMENT
+
+	-A method after execution will return a data back to the caller with the help of return statement.
+
+RETURN :
+
+	• Return is a keyword.
+
+	• It is a control transfers statement.
+
+	• When the return statement is executed, the execution of the method is terminated and
+          control is transferred to the calling method.
+
+Steps to use return statement:
+
+	Step 1: Provide a return type for a method(It should not be void). 
+	Step 2: Use the return statement in the value to be returned.
+
+RULE :
+
+	-The type specified as return type should be same as the type of value passed in a return statement.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+DECISION/CONTROL STATEMENT:
+
+	-Decision statement helps the programmer to skip the block of instructions from the execution if the condition is not satisfied.
+
+TYPES OF DECISION STATEMENT:
+
+	1. if statement
+
+	2. if-else statement
+
+	3. if-else if ladder
+
+	4. switch
+
+_______________________________________________________________________________________________________________________________________________________________________
+IF STATEMENT
+
+Syntax to create if statement:
+
+	if (condition)
+	{
+
+	}
+
+WORK FLOW:
+	-If the condition is satisfied then the instruction written inside the if block 
+	 gets executed or normal flow of the execution continues(Instructions written 
+	 inside the if block is skipped).
+
+_______________________________________________________________________________________________________________________________________________________________________
+IF-ELSE IF STATEMENT
+
+Syntax to create if-else if statement:
+
+if (condition)
+{
+}
+else if (condition)
+{
+}
+else if (condition)
+{
+}
+.
+.
+else
+{
+}
+
+WORK FLOW:
+
+	-If the condition is satisfied then the instruction written inside the if block gets executed if not satisfied, 
+	 condition is checked in the else if block from top to bottom order and if the condition is satisfied in any of 
+	 the else if block then, only that else if block is gets executed if not satisfied else block gets executed remaining blocks are skipped
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+SWITCH STATEMENT
+
+Syntax to create switch block
+
+	switch(value / variable / expression)
+	{
+		case value / expression
+		{
+		statement;
+		}
+		[break;]
+
+		case value / expression
+		{
+		statement;
+
+		[break;]
+
+default:
+
+}}} statement;
+
+[break;]
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+WORKFLOW:
+
+	• The value / variable / expression passed in the switch gets compared with value passed in the case from top to bottom order.
+	• If any of a case is satisfied, the case block is executed and all the blocks present
+		below gets executed. 
+	• If no case is satisfied then default block gets executed.
+	• For a case we can use a break statement which is optional.
+
+NOTE:
+
+	• For a switch we can't pass long, float, double, boolean.
+	• For a case we can't pass variable.
+
+BREAK:
+	
+	• break is a keyword, it is a control transfer statement. 
+	• break is used inside the switch and loop block 
+	• When the break statement is executed control is transferred outside the block.
+_______________________________________________________________________________________________________________________________________________________________________
+
+LOOP STATEMENT :
+
+	- Loop statement helps the programmer to execute the set of instructions repetedly 
+	- In java we have different types of loop statement, they are:
+
+repeatedly
+
+	I. while loop
+
+	II. do-while loop.
+
+	III. for loop
+
+	IV. for each / advanced for / enhanced for
+
+	V. loop
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+WHILE LOOP
+
+Syntax to create while loop:
+
+while(condition)
+
+Statement to be repeated
+
+}
+
+true
+
+false
+
+Conbrul comes and of the hop
+
+Control comes out of the loop
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+WORK FLOW:
+
+CASE 1: When the condition is true
+
+	* The loop continues.
+
+	* Control execute the statement which belongs to the loop. 
+	
+	* After execution once the loop block ends, control goes back to the condition 
+	and the entire process will be repeated till the condition becomes false.
+
+while(true)
+
+{
+
+// statement;
+
+// end of the loop block
+
+--}
+_______________________________________________________________________________________________________________________________________________________________________
+
+CASE 2: When the condition is false
+
+	* The loop is stopped i.e. repetition is stopped.
+
+	* The loop block will not get executed
+
+	* The control comes outside the loop to the next statement.
+
+	while (false)
+	{ 
+	// statement;
+
+	}
+	statement;
+
+NOTE:
+
+	* If the while loop condition is explicitly written false by the programmer then we will get CTE.
+
+
+
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+
+import java.util.*;
+Scanner sc = new Scanner(System.in);
+
+SCANNER CLASS METHODS
+
+	* nextBoolean() 	Reads a boolean value from the user
+	* nextByte()	 	Reads a byte value from the user
+	* nextDouble() 		Reads a double value from the user
+	* nextFloat() 		Reads a float value from the user	
+	* nextInt() 		Reads a int value from the user
+	* nextLine() 		Reads a multi String value from the user
+	* nextLong() 		Reads a long value from the user
+	* nextShort() 		Reads a short value from the user
+	* next().charAt(0)      Reads a char value from the user
+	* next()		Reads a single string value from user 
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+DO-WHILE LOOP
+
+Syntex to create do while loop
+ do
+ {
+ 	//statement
+ }
+ while(condition);
+
+
+	WORK FLOW:
+
+CASE 1 : When condition is true
+	
+	* Control goes to the loop back directly, execute the instructions.
+	* Then control goes to the condition, if the condition is true the control
+		goes back to the do block.
+		
+		
+		do
+		{
+		//statement;
+		}
+		while(true);
+		
+CASE 2: When the condition is false
+
+	* Control goes to the loop block directly, execute the instructions. 
+	* Then control goes to the condition, if the condition is false the loop is stops and control goes to the next statement.
+
+		do
+		{
+		//statement
+		} 
+		while(false);		
+		
+		
+		
+DIFFERENCE BETWEEN WHILE AND DO-WHILE LOOP
+
+WHILE
+
+*First the condition is checked, if the 
+ condition is true then the loop block 
+ gets executed.
+
+*The minimum iteration can be zero.
+
+EXAMPLE:
+
+ 	Int a=5, b= 10, count = 0; 
+	 while (a>b)
+	 {
+	 	count++;
+	 	S.o.pln("value of b is "+b);
+	
+	 } 
+	 S.o.pln("Iteration " + count);
+
+OUTPUT: Iteration 0
+
+
+DO WHILE
+
+* In do_while, first the loop block gets executed and then the condition is checked.
+
+ The minimum iteration is one.
+
+EXAMPLE:
+
+ 	Int a=5, b= 10, count=0,count=0;
+ 	do
+ 	{
+ 	 count++; 
+ 	 S.O.pln("value of b is "+b); 
+ 	}
+	while(a>b);
+	S.o.pln("Iteration " + count);
+
+OUTPUT: value of b is 10
+
+______________________________________________________________________________________________________________________________________________________________________
+		
+FOR LOOP
+
+	Syntax to create for loop :
+
+	for(initialization; condition; update) 
+	{
+	
+	// statement to be repeated
+
+	}
+
+	NOTE:
+
+	* All the three segments are optional (Initialization, condition, update). 
+	* If the condition is not provided, by default it is considered as a true.
+		
+WORK FLOW :
+
+	for(initialization : condition ; update)
+	{		    true |false
+		//statements
+		//end of the block
+	}
+	
+	statement ;		
+
+______________________________________________________________________________________________________________________________________________________________________
+
+NESTED LOOP
+
+	• Writing a loop statement inside the another loop statement is known as nested loop statement. 
+	• In a nested loop, the inner loop executed completely for each and every
+	  iteration of outer loop.
+
+______________________________________________________________________________________________________________________________________________________________________
+DYNAMIC READ:
+
+	* The process of reading a data from the user during execution of a program is known as dynamic read.
+
+STEPS TO ACHIEVE DYNAMIC READ :
+
+	Step 1: Import Scanner class from java.util package. 
+		
+		import java.util.Scanner;
+
+	Step 2: Create an object for the Scanner class. 
+		
+		Scanner input = new Scanner(System.in);
+
+	Step 3: Call the method of Scanner class to read the data from the user 
+		
+		input.method();
+
+______________________________________________________________________________________________________________________________________________________________________
+
+
+	 STATIC AND STATIC MEMBERS
+
+STATIC:
+
+	* Static is a keyword. 
+	
+	* It is a modifier.
+
+	* Any member of a class is prefixed with static modifier then it is known as static member of a class.
+	
+	* Static members are also known as class members.
+
+NOTE:
+
+	Static members can be prefixed only for a class members (members declared in a class).
+	 
+STATIC MEMBERS:
+
+	* Static method
+
+	* Static variable
+
+	* Static initializers
+
+
+______________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+JAVA RUNTIME MEMORY
+
+	-To execute the java program a portion of memory in RAM is allocated for JRE. 
+	
+	-In that portion of memory allocated, we have different range of memory, hence they are classified as follows,
+
+	1. Method area
+
+	2. Class static area
+
+	3. Stack area 
+	
+	4. Heap area
+
+	___________________________________________________________________________________
+	|		   |			     |	         	|	          |
+        |   METHOD AREA    |   CLASS STATIC AREA     |    STACK AREA    |     HEAP AREA   |               
+	|__________________|_________________________|__________________|_________________|
+                                                                                           
+
+______________________________________________________________________________________________________________________________________________________________________
+
+
+METHOD AREA & CLASS STATIC AREA
+
+	METHOD AREA:
+
+		- All the method blocks will be stored in a method area (Instruction of the methods).
+
+CLASS STATIC AREA:
+
+	* For every class there is a dedicated block of memory is created in the class static area (static pool). 
+	
+	* The static members of the class will be allocated inside the memory created for the class.
+
+
+
+______________________________________________________________________________________________________________________________________________________________________
+
+
+STACK AREA & HEAP AREA
+
+	STACK AREA:
+
+	* Stack area is used for execution of instructions. 
+	
+	* For every method that is under execution a block of memory is created in this stack area which is known as frame.
+
+	* Once the execution of a method is completed the frame is removed.
+
+HEAP AREA:
+
+	* In a heap area a block of memory is created for the instance of class (Object).
+
+	* Every block of memory created with the help of reference. 
+	
+	* All the non static member of a class will be allocated inside this block of memory.
+
+	* Therefore we can access the non static member with the help of reference.
+______________________________________________________________________________________________________________________________________________________________________
+
+STATIC METHOD:
+
+	- A method prefixed with static modifier is known as static method.
+
+CHARACTERISTICS :
+
+	* Static method block is stored in the method area and reference of the static method is stored inside the class static area (static pool). 
+	
+	* We can use the static method with or without creating object of the class.
+
+	* We can use the static method with the help of class name.
+
+	* A static method of the class can be used in any class with the help of class name.
+______________________________________________________________________________________________________________________________________________________________________
+
+STATIC CONTEXT :
+
+	* The block which belongs to the static method and multi line static initializer is known as static context.
+
+	* Inside a static context we can use the static members of same class directly by using its name.
+
+	* Inside a static context we can't use the non static members of the same or different class directly by using its name or by using its class name.
+
+	* this keyword is not allowed inside the static context.
+______________________________________________________________________________________________________________________________________________________________________
+
+DEFAULT VALUES OF DATATYPES
+			
+	datatype	 default values
+			  
+	* int   	   0
+	* float 	   0.0
+	* boolen	   false
+	* char  	   null
+	* byte  	   0
+	* long  	   0
+	* double	   0.0
+	* short            0	
+______________________________________________________________________________________________________________________________________________________________________
+
+STATIC INITIALIZER
+
+	There are two types
+	
+	1) Single Line Static initializer
+	2) Multi Line Static initializer
+	
+	Ex :
+		class Program2
+		{
+			static int a;	//Single line static initializer
+	
+			Static 	//Multi line static initializer
+			{
+				Sysyem.out.println("hii");
+			}
+			public static void main(String args[])
+			{
+				System.out.println(a);
+			}
+		}
+______________________________________________________________________________________________________________________________________________________________________
+
+STATIC VARIABLE:
+
+	-Variable declared in a class block and prefixed with static modifier is known as static variable
+
+CHARACTERISTICS :
+
+	* It is a member of the class. 
+	
+	* it will be assigned with default value.
+
+	* Memory will be allocated inside the class static area.
+
+	* It is global in nature, it can be used within the class as well as in different class 
+	
+	* We can use static variable with the help of the class name as well as with the help of object reference.
+
+	* We can access the static variable from different class directly with the help ofclass name.
+
+NOTE: If static variable and local variable are in same name then we can differentiate static variable with the help of class name
+
+______________________________________________________________________________________________________________________________________________________________________
+
+
+STATIC INITIALIZER
+
+We have two types of static initializers. They are, 
+	1. Single line static initializer
+
+	2. Multi line static initializer 
+
+SINGLE LINE STATIC INITIALIZER:
+
+	Syntax to create single line static initializers: 
+		
+		static data type variable = value / expression; 
+
+
+MULTILINE STATIC INITIALIZER:
+
+	Syntax to create multi line static initializers:
+
+		static
+		{
+			Statements;
+		}
+______________________________________________________________________________________________________________________________________________________________________
+
+CHARACTERISTICS OF STATIC INITIALIZERS
+
+CHARACTERISTICS :
+
+	* Static initializers gets executed implicitly during the loading process of the class. 
+
+	* A class can have more than one static initializer they execute top to bottom order.
+
+PURPOSE OF STATIC INITIALIZER:
+
+	* Static initializers are used to execute the startup instructions.
+
+	* As the static blocks get executed before the actual execution.
+
+______________________________________________________________________________________________________________________________________________________________________
+
+LOADING PROCESS OF A CLASs
+
+CLASS LOADING PROCESS:
+
+	* A block is created for a class in the static pool, it can be accessed with the help of class name. 
+	
+	* All the method definition are loaded in method area and if the method is static then the reference of 
+	  that method is stored inside the class block (class static area).
+
+	* If the class has any static variable they are loaded in the class static area with default value.
+
+	* If the class has any static initializers they are executed from top to bottom order,
+
+	* The loading process of the class is completed, then jvm will call the main method of initial loading class.
+
+NOTE:
+
+	-JVM will call only the main method of initial loaded class.
+
+______________________________________________________________________________________________________________________________________________________________________
+
+CLASS 
+	-class is a non premitive data in java
+	
+	-class is a blue print of the object  
+
+______________________________________________________________________________________________________________________________________________________________________
+
+OBJECT:
+
+	* Any substance which has existence in the real world is known as an object. Every object will have attribute and behaviours.
+
+OBJECT IN JAVA:
+
+	* According to object oriented programming object is a block of memory created in the heap area during 
+	
+	  the runtime, it represents a real world object. A real world object consist of attributes and behaviour.
+
+	* Attributes are represented with the help of non-static variables.
+
+	* Behaviours are represented with the help of non-static methods,
+______________________________________________________________________________________________________________________________________________________________________
+
+CLASS:
+
+	* According to real world situation beforcting an object blueprint of the object must be designed, 
+	  
+	  it provides specification of the real world object. 
+	
+	* Similarly in object oriented programming before creating an object the blueprint of the object must be designed 
+	  
+	  which provides the specification of the object, this is done with the help of class.
+
+DEFINITION OF CLASS:
+
+	* It is user defined non primitive data type, it represent the blueprint of the real world object.
+	
+	* Class provides specification of real world object. 
+
+NOTE:
+	-We can create any number of object for a class, it is known as instance of a class.
+______________________________________________________________________________________________________________________________________________________________________
+
+STEPS TO CREATE AN OBJECT: 
+	STEP 1: Create a class or use an existing class if already created.
+
+	STEP 2: Instantiation
+
+INSTANTIATION: 
+	The process of creating an object is known as instantiation.
+
+Syntax to create an object:
+
+	new className();
+	     |________|
+	          |--------constructor
+
+new :
+	* new is a keyword.
+
+	* It is a unary operator.
+
+	* It is used to create a block of memory inside a heap area during runtime. 
+	
+	* Once the object is created it returns the reference of an object.
+______________________________________________________________________________________________________________________________________________________________________
+
+CONSTRUCTOR:
+
+	* Constructor is a special member of the class whose name is same as the class name. 
+
+	* Constructor is used to load the non static members of a class into the object created.
+
+EXAMPLE:
+
+	Step 1: Designing a class
+
+		class Employee
+		{
+			String ename; 
+			Int eld;
+		}	
+	Step 2: Instantiation
+
+		new Employee();
+
+
+			    HEAP AREA
+			________________
+			|		|	
+			|   0x1	 	|		
+			|  ename=|null|	|
+			|         	|
+			|  eld = |0|	|	
+			|		|
+			|		|
+			|_______________|
+______________________________________________________________________________________________________________________________________________________________________
+			
+NON PRIMITIVE DATA TYPE:
+
+	* Every class name in java is a non primitive data type. 
+	* Non primitive data type are used to create a non primitive variables to store the reference of an object.
+
+EXAMPLE:
+														
+	class Employee
+	{
+		ename;
+		int eid;
+	}
+	Employee e = new Employee();
+	S.o.pln(e); // ox1
+
+				
+		            HEAP AREA	
+			________________
+			|		|	
+			|   0x1	 	|		
+			|  ename=|null|	|
+			|         	|
+			|  eld = |0|	|	
+			|		|
+			|		|
+			|_______________|
+______________________________________________________________________________________________________________________________________________________________________
+				
+NON STATIC INITIALIZATION 
+
+	class Demo2
+	{
+		static int b =88; 	//static initializer
+		int a=88; 		//non static initializer
+		{
+			int a = 56; 
+			System.out.println(a);
+		}
+		public static void main(String[] args) 
+		{
+			Demo2 d2 = new Demo2(); 
+			System.out.println(a);
+		}
+	}						
+		
+		
+______________________________________________________________________________________________________________________________________________________________________						
+
+NON STATIC AND NON STATIC MEMBERS
+
+NON STATIC:
+
+	* Any member declared in a class and not prefixed with a static modifier is known as a non-static member of a class. 
+	
+	* Non-static members belong to an instance of a class. Hence it is also known as an instance member or object member. 
+	
+	* The memory for the non-static variable is allocated inside the heap area(instance of a class). 
+	
+	* We can create any number of instances for a class. 
+	
+	* Non-static members will be allocated in every instance of a class.
+
+NON STATIC MEMBERS:
+
+	* Non static variable 
+	
+	* Non static method
+
+	* Non static initializers
+
+	* Constructors
+_______________________________________________________________________________________________________________________________________________________________________
+
+NON STATIC VARIABLE:
+
+	* A variable declared inside a class block and not prefixed with a static modifier is known as a non-static variable.
+
+CHARACTERISTICS :
+
+	* We can't use the non-static variable without creating an object. 
+	
+	* We can only use the non-static variable with the help of object reference. 
+	
+	* Non-static variables are assigned with default during the object loading process.
+
+	* Multiple copies of non-static variables will be created (once for every object).
+_______________________________________________________________________________________________________________________________________________________________________
+
+NON STATIC METHOD:
+
+	* A method declared in a class block and not prefixed with a static modifier is known as a non-static method.
+
+CHARACTERISTICS :
+
+	* A method block will get stored inside the method area and a reference of the method is stored inside the instance of a class [object]. 
+	
+	* We can't call the non-static method of a class without creating an instance of a class[object].
+
+	* We can't access the non-static method directly with the help of class names.
+
+	* Non-static method can't be accessed directly with their names inside the static context.
+_______________________________________________________________________________________________________________________________________________________________________
+
+NON STATIC CONTEXT:
+ 
+	* The block which belongs to the non static method and multi line non static initializer is knwn as non static context.
+	
+	* Inside a non static context we can use static and non static members of the same class directly by using its name.
+_______________________________________________________________________________________________________________________________________________________________________
+
+NON STATIC INITIALIZERS :
+
+	* Non staict initializers will execute during the loading process of an object.
+	
+	* Non static initializers will execute once for every instance of a cla  created.
+	
+PURPOSE OF NON STATIC INITIALIZER:
+
+	* Non static initializer are used to execute the statup instructions for an object.
+	
+TYPES OF NON STATIC INITIALIZERS:
+
+	1) Single line non static initializer
+	
+	2) Multi line non static initializer
+_______________________________________________________________________________________________________________________________________________________________________
+
+	1. SINGLE LINE NON STATIC INITIALIZER:
+		
+		Syntext to create single line non static initializers :
+		
+			datatype variable = value / reference
+	2. MULTI LINE NON STATIC INITIALIZER:
+		
+		Systax to create multi line non static initializers :
+		{
+			//ststements ;			
+		}
+NOTE :
+	All the Non static initializers will execute from top to bottom order for every object creation.
+_______________________________________________________________________________________________________________________________________________________________________
+ 
+class Mobile
+{
+	String brand;
+	double price;
+	String color;
+}
+
+class MobileDriver1
+{
+	public static void main(String[] args)
+	{
+		Mobile mobile = new Mobile();
+		mobile.brand = "Samsung";
+		mobile.price = 14000;
+		mobile.color = "RED";
+		System.out.println("The brand of the mobile is "+mobile.brand);
+		System.out.println("The price of the mobile is "+mobile.price);
+		System.out.println("The color of the mobile is "+mobile.color);
+	}
+}
+
+   O/P--The brand of the mobile is Samsung
+	The price of the mobile is 14000.0
+	The color of the mobile is RED
+_______________________________________________________________________________________________________________________________________________________________________
+
+PYARAMITARIZED CONSTRUCTOR
+
+	Ex:
+	
+	class Laptop
+	{	
+		String brand;       
+		double price;
+		String color;
+		Laptop(String brand,double price,String color)    //paramitarized constructor
+		{
+			this.brand=brand;   //this. key word holds the reference of the local veriable	
+	 		this.price=price;
+			this.color=color;
+		}
+		public static void main(String args[])
+		{		
+			Laptop lap1 = new Laptop("DELL",40000,"Black");    //Hear "new" is a constructor		
+			Laptop lap2 = new Laptop("HP",50000,"White");    
+			
+	//		lap.brand = "DELL";    // we can directly use like this but for the shake of 		
+	//		lap.price = 40000;     //the paramitarized constructor we not are using stis part
+	//		lap.color = "Black";
+			System.out.println("The brand of the laptop is "+lap1.brand);
+			System.out.println("The price of the laptop is "+lap1.price);
+			System.out.println("The color of the laptop is "+lap1.color);
+		
+			System.out.println();
+			
+			System.out.println("The brand of the laptop is "+lap2.brand);
+			System.out.println("The price of the laptop is "+lap2.price);
+			System.out.println("The color of the laptop is "+lap2.color);
+		}
+	}
+_______________________________________________________________________________________________________________________________________________________________________
+
+CONSTRUCTOR :
+
+	* Constructor is a special type of non-static method whose name is the same as the class name but it does not have a return type.
+
+Syntax to create the constructor:
+
+	* A programmer can define a constructor by using the following syntax: 
+	
+	[access_modifier] [modifier] className([Formal_Arguments])
+	{
+	
+	}
+
+	// initialization;
+	
+	}
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+
+CONSTRUCTOR BODY:
+
+>>A CONSTRUCTOR BODY WILL HAVE THE FOLLOWING
+       1)load instructions added by the compiler during compile time
+       2)non static initializer of the class
+       3)programmerr wriiten instructions
+_______________________________________________________________________________________________________________________________________________________________________
+
+PURPOSE OF THE CONSTRUCTOR:
+
+ during the execution of the constructor
+  >>non-static members of the class will be loaded into the object
+  >>progrsmmer written instruction of the constructor gets executed
+_______________________________________________________________________________________________________________________________________________________________________
+CLASSIFICATION OF CONSTRUCTOR:
+
+1. No argument constructor
+
+NO ARGUMENT CONSTRUCTOR:
+
+Constructors can be classified into two typos based in formal anunt 2. Parameterized constructor
+
+constructor:
+
+A constructor which doesn't have a formal argument is nown as ne argumenti
+
+PARAMETERIZED CONSTRUCTOR A constructor which have a forma argument is known as pared constructor
+_______________________________________________________________________________________________________________________________________________________________________-
+
+NO ARGUMENT CONSTRUCTOR:
+
+A constructor which does have a formal argument is known as a no-argument constructor
+Syntax to create no argument constructor:
+
+[access modifier] [modifier classNae()
+ {
+  code;
+  }
+
+NOTE:
+
+If the programmer fails to create a constructor then congles implicity add a no-argument constructor only
+_______________________________________________________________________________________________________________________________________________________________________
+
+LOADING PROCESS OF AN OBJECT:
+
+  >>a new keyword will create a block of memory in a heap area
+  >>Constructor is called.
+  >>During the execution of the constructor,
+
+        1. All the non-static members of the class are loaded into the object.
+        II. If there are non-static initializers they are executed from top to bottom order. 
+        III. Programmer written instruction of the constructors will be executed.
+
+  >> The execution of the constructor is completed.
+  >> The object is created successfully.
+  >>The reference of an object is returned by the new keyword.
+  >>These steps are repeated for every object creation.
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+PARAMETERIZED CONSTRUCTOR :
+
+The constructor which has a formal argument is known as parameterized
+
+constructor.
+
+PURPOSE OF THE PARAMETERIZED CONSTRUCTOR :
+
+Parameterized constructors are used to initialize the variables (non-static) by accepting the data from the constructor in the object creation statement.
+
+
+
+
+
+CONSTRUCTOR BODY:
+
+>>A CONSTRUCTOR BODY WILL HAVE THE FOLLOWING
+       1)load instructions added by the compiler during compile time
+       2)non static initializer of the class
+       3)programmerr wriiten instructions
+_______________________________________________________________________________________________________________________________________________________________________
+
+PURPOSE OF THE CONSTRUCTOR:
+
+ during the execution of the constructor
+  >>non-static members of the class will be loaded into the object
+  >>progrsmmer written instruction of the constructor gets executed
+_______________________________________________________________________________________________________________________________________________________________________
+CLASSIFICATION OF CONSTRUCTOR:
+
+1. No argument constructor
+
+NO ARGUMENT CONSTRUCTOR:
+
+Constructors can be classified into two typos based in formal anunt 2. Parameterized constructor
+
+constructor:
+
+A constructor which doesn't have a formal argument is nown as ne argumenti
+
+PARAMETERIZED CONSTRUCTOR A constructor which have a forma argument is known as pared constructor
+_______________________________________________________________________________________________________________________________________________________________________-
+
+NO ARGUMENT CONSTRUCTOR:
+
+A constructor which does have a formal argument is known as a no-argument constructor
+Syntax to create no argument constructor:
+
+[access modifier] [modifier classNae()
+ {
+  code;
+  }
+
+NOTE://///
+
+If the programmer fails to create a constructor then congles implicity add a no-argument constructor only
+_______________________________________________________________________________________________________________________________________________________________________
+
+LOADING PROCESS OF AN OBJECT:
+
+  >>a new keyword will create a block of memory in a heap area
+  >>Constructor is called.
+  >>During the execution of the constructor,
+
+        1. All the non-static members of the class are loaded into the object.
+        II. If there are non-static initializers they are executed from top to bottom order. 
+        III. Programmer written instruction of the constructors will be executed.
+
+  >> The execution of the constructor is completed.
+  >> The object is created successfully.
+  >>The reference of an object is returned by the new keyword.
+  >>These steps are repeated for every object creation.
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+PARAMETERIZED CONSTRUCTOR :
+
+The constructor which has a formal argument is known as parameterized
+
+constructor.
+
+PURPOSE OF THE PARAMETERIZED CONSTRUCTOR :
+
+Parameterized constructors are used to initialize the variables (non-static) by accepting the data from the constructor in the object creation statement.
+
+
+
+
+
+CONSTRUCTOR BODY:
+
+>>A CONSTRUCTOR BODY WILL HAVE THE FOLLOWING
+       1)load instructions added by the compiler during compile time
+       2)non static initializer of the class
+       3)programmerr wriiten instructions
+_______________________________________________________________________________________________________________________________________________________________________
+
+PURPOSE OF THE CONSTRUCTOR:
+
+ during the execution of the constructor
+  >>non-static members of the class will be loaded into the object
+  >>progrsmmer written instruction of the constructor gets executed
+_______________________________________________________________________________________________________________________________________________________________________
+CLASSIFICATION OF CONSTRUCTOR:
+
+1. No argument constructor
+
+NO ARGUMENT CONSTRUCTOR:
+
+Constructors can be classified into two typos based in formal anunt 2. Parameterized constructor
+
+constructor:
+
+A constructor which doesn't have a formal argument is nown as ne argumenti
+
+PARAMETERIZED CONSTRUCTOR A constructor which have a forma argument is known as pared constructor
+_______________________________________________________________________________________________________________________________________________________________________-
+
+NO ARGUMENT CONSTRUCTOR:
+
+A constructor which does have a formal argument is known as a no-argument constructor
+Syntax to create no argument constructor:
+
+[access modifier] [modifier classNae()
+ {
+  code;
+  }
+
+NOTE:
+
+If the programmer fails to create a constructor then congles implicity add a no-argument constructor only
+_______________________________________________________________________________________________________________________________________________________________________
+
+LOADING PROCESS OF AN OBJECT:
+
+  >>a new keyword will create a block of memory in a heap area
+  >>Constructor is called.
+  >>During the execution of the constructor,
+
+        1. All the non-static members of the class are loaded into the object.
+        II. If there are non-static initializers they are executed from top to bottom order. 
+        III. Programmer written instruction of the constructors will be executed.
+
+  >> The execution of the constructor is completed.
+  >> The object is created successfully.
+  >>The reference of an object is returned by the new keyword.
+  >>These steps are repeated for every object creation.
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+PARAMETERIZED CONSTRUCTOR :
+
+The constructor which has a formal argument is known as parameterized
+
+constructor.
+
+PURPOSE OF THE PARAMETERIZED CONSTRUCTOR :
+
+Parameterized constructors are used to initialize the variables (non-static) by accepting the data from the constructor in the object creation statement.
+
+
+
+
+
+CONSTRUCTOR BODY:
+
+>>A CONSTRUCTOR BODY WILL HAVE THE FOLLOWING
+       1)load instructions added by the compiler during compile time
+       2)non static initializer of the class
+       3)programmerr wriiten instructions
+_______________________________________________________________________________________________________________________________________________________________________
+
+PURPOSE OF THE CONSTRUCTOR:
+
+ during the execution of the constructor
+  >>non-static members of the class will be loaded into the object
+  >>progrsmmer written instruction of the constructor gets executed
+_______________________________________________________________________________________________________________________________________________________________________
+CLASSIFICATION OF CONSTRUCTOR:
+
+1. No argument constructor
+
+NO ARGUMENT CONSTRUCTOR:
+
+Constructors can be classified into two typos based in formal anunt 2. Parameterized constructor
+
+constructor:
+
+A constructor which doesn't have a formal argument is nown as ne argumenti
+
+PARAMETERIZED CONSTRUCTOR A constructor which have a forma argument is known as pared constructor
+_______________________________________________________________________________________________________________________________________________________________________-
+
+NO ARGUMENT CONSTRUCTOR:
+
+A constructor which does have a formal argument is known as a no-argument constructor
+Syntax to create no argument constructor:
+
+[access modifier] [modifier classNae()
+ {
+  code;
+  }
+
+NOTE:
+
+If the programmer fails to create a constructor then congles implicity add a no-argument constructor only
+_______________________________________________________________________________________________________________________________________________________________________
+
+LOADING PROCESS OF AN OBJECT:
+
+  >>a new keyword will create a block of memory in a heap area
+  >>Constructor is called.
+  >>During the execution of the constructor,
+
+        1. All the non-static members of the class are loaded into the object.
+        II. If there are non-static initializers they are executed from top to bottom order. 
+        III. Programmer written instruction of the constructors will be executed.
+
+  >> The execution of the constructor is completed.
+  >> The object is created successfully.
+  >>The reference of an object is returned by the new keyword.
+  >>These steps are repeated for every object creation.
+_______________________________________________________________________________________________________________________________________________________________________
+
+PARAMETERIZED CONSTRUCTOR :
+
+	* The constructor which has a formal argument is known as parameterized constructor.
+
+PURPOSE OF THE PARAMETERIZED CONSTRUCTOR :
+
+	* Parameterized constructors are used to initialize the variables (non-static) 
+	  by accepting the data from the constructor in the object creation statement.
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+OVERLOADING
+
+CONSTRUCTOR OVERLOADING:
+
+>>If a class is having more than one constructor it is known as constructor overloading.
+
+RULE :
+
+The signature of the constructor must be different.
+_______________________________________________________________________________________________________________________________________________________________________
+CONSTRUCTOR CHAINING:
+
+• A constructor calling another constructor known as constructor chaining
+• In java, we can achieve constructor chaining by using two ways
+
+1. this() (this call statement)
+
+2. super() (super call statement)
+_______________________________________________________________________________________________________________________________________________________________________
+
+this() statement
+
+this():
+
+	>>It is used to call the constructor of the same class from another constructor.
+
+RULE:
+
+	>>this) can be used only inside the constructor.
+
+	>> It should always be the first statement in the constructor
+
+	>>The recursive call to the constructor is not allowed (Calling by self)
+	
+	>> If a class has n constructors we can use this statement in n-1 constructors onlyt
+	
+	atleast constructor should be without this()
+
+NOTE:
+
+	* If the constructor has this() statement then the compiler doesn't add load instruction & non-static initializers into the constructor body
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+THIS KEYWORD
+
+	this :
+
+	* It is a keyword.
+	
+	* It is a non static variable it holds the reference of current executing object.
+
+USES OF THIS:
+
+	* Used to access the members of current object.
+
+	* It is used to give the reference of the current object.
+
+	* Reference of a curent object can be passed from the method using 'this' keyword.
+
+	* Calling a constructor of the same class is achieved with the help of this call statement.
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+ 
+class Whatsapp
+{
+	private String username;
+	private long cno;
+	private String status;
+	
+	Whatsapp(){}
+	Whatsapp(String username,long cno,String status){
+		this.username=username;
+		this.cno=cno;
+		this.status=status;
+		}
+	public String getUsername()
+	{
+		return username;
+	}
+	public void setUsername(String username)
+	{
+		this.username=username;
+	}
+	
+}
+	
+class Wapp
+{
+	public static void main(String args[])
+	{
+		Whatsapp w1= new Whatsapp("GIRIPRASAD",66019,"Marrid");
+		System.out.println(w1.getUsername());
+	}
+}
+
+O/P--->  GIRIPRASAD
+_______________________________________________________________________________________________________________________________________________________________________
+
+PRINCIPLE OF OOPS:
+
+Object-oriented programming has the following principles:
+
+1. Encapsulation
+
+2. Inheritance
+
+3. Polymorphism
+
+4. Abstraction
+_______________________________________________________________________________________________________________________________________________________________________
+
+ENCAPSULATION :
+
+• The process of binding the state(attributes/fields) and behavior of an object together is known as encapsulation.
+
+• We can achieve encapsulation in java with the help of the class, class has both state and behavior of an object.
+
+ADVANTAGE OF ENCAPSULATION :
+
+By using encapsulation we can achieve the data hiding.
+_______________________________________________________________________________________________________________________________________________________________________
+
+DATA HIDING:
+
+• It is a process of restricting the direct access of data members of an object and provides indirect secured access of data members via methods of the same object is known as data hiding.
+
+• Data hiding helps to verify and validate the data before storing and modifying it.
+_______________________________________________________________________________________________________________________________________________________________________
+
+STEPS TO ACHIEVE DATA HIDING:
+
+STEP 1: Prefix data members of a class with private modifier.
+
+STEP 2: Design a getter and setter method.
+
+PRIVATE MODIFIER :
+
+• private is an access modifier.
+
+• private is a class-level modifier.
+
+. If the members of the class are prefixed with a private modifier then we can access that member only within the class.
+
+NOTE :
+
+Data hiding can be achieved with the help of a private modifier.
+_______________________________________________________________________________________________________________________________________________________________________
+
+STEPS TO ACHIEVE DATA HIDING:
+
+STEP 1: Prefix data members of a class with private modifier.
+
+STEP 2: Design a getter and setter method.
+
+PRIVATE MODIFIER :
+
+• private is an access modifier.
+
+• private is a class-level modifier.
+
+. If the members of the class are prefixed with a private modifier then we can access that member only within the class.
+
+NOTE :
+
+Data hiding can be achieved with the help of a private modifier.
+_______________________________________________________________________________________________________________________________________________________________________
+
+NOTE:
+
+• If you want to make your hidden data member-only readable then create only the getter method.
+
+• If you want to make your hidden data member-only modifiable then create only the setter method.
+
+• If you want to make your hidden data member both readable and modifiable then create both getter and setter methods.
+
+. If you want to make your hidden data member neither readable and nor modifiable then don't create a getter and setter method.
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+ADVANTAGES OF DATA HIDING
+
+ADVANTAGES :
+
+• Provides security to the data members.
+
+. We can verify and validate the data before modifying it.
+
+* We can make the data member of the class to
+
+→ Only readable
+
+→ Only modifiable
+
+→ Both readable and modifiable
+
+→ Neither readable not modifiable
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+class car
+{
+	String brand;
+	String color;
+	int noOFSeats;
+	Engine e;
+	car(){}
+	car(String brand,String color,int noOFSeats,Engine e)
+	{
+		this.brand = brand;
+		this.color = color;
+		this.noOFSeats=noOFSeats;
+		this.e=e;	
+	}
+}
+
+class CarDriver
+{
+	public static void main(String[] args)
+	{
+		car c1 = new car("Audi","Black",3,new Engine(9999338,2000));
+		System.out.println(c1.brand);
+		System.out.println(c1.color);
+		System.out.println(c1.noOFSeats);		
+		System.out.println(c1.e.cc);
+	}
+}
+
+class Engine
+{
+	int enginNo;
+	int cc;
+	
+	Engine(){}
+	
+	Engine(int enginNo,int cc)
+	{
+		this.enginNo=enginNo;
+		this.cc=cc;
+	}
+}		
+
+
+O/P-->  Audi
+	Black
+	3
+	2000
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+
+class Bus1
+{	
+	long busno;
+	String busdesti;
+	long buspickup;
+	long noofseats;
+	passenger p;
+	Bus1(){}
+	Bus1(long busno,String busdesti,long buspickup,long noofseats,passenger p)
+	{
+		this.busno=busno;
+		this.busdesti=busdesti;
+		this.buspickup=buspickup;
+		this.noofseats=noofseats;
+		this.p=p;
+	}
+}
+
+class passenger
+{
+	String sname;
+	long pcno;
+	passenger(){}
+	passenger(String sname,long pcno)
+	{
+		this.sname=sname;
+		this.pcno=pcno;
+	}
+}
+
+class Bus
+{
+	public static void main(String args[])
+	{
+		Bus1 b1=new Bus1(1,"Delhi",50,52,new passenger("Giri",9901066));
+		
+		System.out.println(b1.busno);
+		System.out.println(b1.busdesti);
+		System.out.println(b1.buspickup);
+		System.out.println(b1.noofseats);
+		System.out.println(b1.p.sname);
+		System.out.println(b1.p.pcno);
+	}
+}
+_______________________________________________________________________________________________________________________________________________________________________
+
+class Sim1
+{
+	String serviceprovidor;
+	String color;
+	long simNo;
+	Sim1(){}
+	Sim1(String serviceprovidor,String color,long simNo)
+	{
+		this.serviceprovidor=serviceprovidor;
+		this.color=color;
+		this.simNo=simNo;
+	}
+}
+
+
+class Mobile
+{
+	String brand;
+	double price;
+	Sim1 s;
+	Mobile(){}
+	Mobile(String brand,double price)
+	{
+		this.brand=brand;
+		this.price=price;
+	}
+	public void insertSim(Sim1 s)
+	{
+		this.s=s;
+		System.out.println("Sim is inserted");
+	}
+
+}
+
+class Sim
+{
+	public static void main(String args[])
+	{
+		Mobile m1 = new Mobile("oppo",40000);
+		m1.insertSim(new Sim1("Airtel","Red",9901066));
+		System.out.println(m1.brand);
+		System.out.println(m1.s.serviceprovidor);
+		System.out.println(m1.s.color);
+		System.out.println(m1.s.simNo);
+	}
+}
+_______________________________________________________________________________________________________________________________________________________________________
+
+LAZY/LATE INSTANTIATION :
+
+	* In this design the instance of dependent object is created only when it is required (It is not implicitly created).
+
+	* We can achieve this design with the help of a method, it can be called as an helper.
+
+
+STEPS TO ACHIEVE LATE / LAZY INSTANTIATION :
+
+	STEP 1: Create a dependent class.
+
+	STEP 2: Create another class and define a parameterized method that will accept the reference of the 
+		dependent object and inside that method initialize the dependent object.
+
+	STEP 3: Create the object for a class and call a method by passing dependent type object reference so that, we can achieve a late/lazy instantiation.
+_______________________________________________________________________________________________________________________________________________________________________
+
+Is-A RELATIONSHIP:
+
+• The relationship between two objects which is similar to the parent and child relation is known as the Is-A relationship.
+
+• In an Is-A relationship, the child object will acquire all properties of the parent object, and child object will have its own extra properties.
+
+• In an Is-A relationship, we can achieve generalization and specialization.
+
+NOTE : 1
+
+Parent is called generalized.
+
+. Child is called specialized.
+
+NOTE : 2
+
+private members, constructors and initializers are not inherited to the child class.
+
+_______________________________________________________________________________________________________________________________________________________________________
+. With the help of the child class reference type, we can use the members of the parent's class as well as the child.
+
+. With the help of parent class reference, we can use only the members of a parent but not the child class.
+
+_______________________________________________________________________________________________________________________________________________________________________
+TERMINOLOGIES
+
+	PARENT CLASS :
+
+		* The parent class is also known as a superclass or base class.
+
+	CHILD CLASS :
+
+		* The child class is also known as a subclass or derived class.
+
+	NOTE: Is-A relationship is achieved with the help of inheritance.
+	
+	INHERITANCE:
+	
+		* The process of one class acquiring all the properties and behavior from the other class is called inheritance.
+
+		* In java, we can achieve inheritance with the help of
+
+		1. extends keyword
+
+		2. implements keyword
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+EXTENDS KEYWORD
+
+extends keyword :
+
+	* extends keyword is used to achieve inheritance between two classes.
+
+EXAMPLE:
+
+class A
+{
+	Int i = 10;
+} 
+Class B extends A
+{
+	Int j = 20;
+
+	public static void main(String args[])
+	{
+		B b = new B();
+
+		S.o.pln(b.i); //CTS
+
+		S.o.pln(b.j); //CTS
+
+		A a=new A();
+
+		S.o.pln(a.i); //CTS
+
+		S.o.pln(a.j) //CTE with the help of parent variable we can only access parent members
+	}
+}
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+	1. Single Inheritance: 
+		* In single inheritance, subclasses inherit the features of one superclass. 
+		  
+		  In the image below, class A serves as a base class for the derived class B.
+		
+				       A
+				       /\
+					|
+					|
+					|
+					B
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+	2. Multilevel Inheritance: 
+	        * In Multilevel Inheritance, a derived class will be inheriting a 
+		
+	   	  base class and as well as the derived class also act as the base class to other class. 
+	   	
+	   	  In the below image, class A serves as a base class for the derived class B, which in turn 
+	   	
+	   	  serves as a base class for the derived class C. In Java, a class cannot directly access the grandparent’s members.
+
+
+
+					A
+					/\
+					 |
+					 |
+					 |
+					 B
+					 /\
+					 |
+					 |
+					 |
+					 C
+					 |
+					 
+					 |
+					 
+_______________________________________________________________________________________________________________________________________________________________________								
+
+	3. Hierarchical Inheritance: 
+		* In Hierarchical Inheritance, one class serves as a 
+		
+		  superclass (base class) for more than one subclass. In the below image, class A 
+	   
+	  	  serves as a base class for the derived class B & C.
+
+
+
+					A
+					^
+				       /  \
+				      /    \
+				      B     C
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+	4. Multiple Inheritance (Through Interfaces): 
+	
+		* In Multiple inheritances, one class can have 
+	
+		  more than one superclass and inherit features from all parent classes. Please note that Java 
+	
+		  does not support multiple inheritances with classes. In java, we can achieve multiple inheritances 
+	
+		  only through Interfaces. In the image below, Class C is derived from interface A and B.
+
+
+					A     B
+					\     /
+					 \   /
+					  \ /
+					   V
+					   C
+					   
+	NOTE:
+
+	* Multiple inheritance has a problem known as the diamond problem. Because of the 
+	
+	  diamond problem, we can't achieve multiple inheritance with the help of class.
+
+	* In java, we can achieve multiple inheritance with the help of an interface.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+DIAMOND PROBLEM:
+
+  >>Assume that there are two classes A and B. Both are having the method with the same signature. 
+  
+    If class C inherits A and B then these two methods are inherited to C.
+
+  >>Now an ambiguity arises when we try to call the super class method with the the help of subclass reference.
+  
+  >>This problem is known as the diamond problem.
+_______________________________________________________________________________________________________________________________________________________________________
+
+	5. Hybrid Inheritance(Through Interfaces): 
+		* It is a mix of two or more of the above types of inheritance. 
+	
+		  Since java doesn’t support multiple inheritances with classes, hybrid inheritance is also not possible with classes. 
+	    
+		  In java, we can achieve hybrid inheritance only through Interfaces.
+		
+		A _____	       
+		 |     |
+		 |_____|
+		/      \
+	 B     /        \
+	_____ /          \ _____C
+       |     |            |     |
+       |_____|		  |_____|    
+             \            /
+               \         /
+                 \ _____/	       
+		  |     |
+		  |_____|
+		  D
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+UNDERSTANDING REFERENCE VARIABLE:
+
+	* One object can be referred to with multiple reference variables. 
+	
+	* We can copy the reference of one object into multiple reference variables.		
+
+EXAMPLE:
+
+	class Student
+
+	{
+		String sname;
+	}
+
+	Student s1 = new Student();
+
+	Student s2 = s1;
+
+	Student s3 = s1;
+
+NOTE:
+
+	* We can access the members of the Student object by using s1 or $2 or s3. [The state of the object can be modified by using any of the reference variables.]
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+NOTE:
+
+	* We can copy the reference from one variable to another variable only if both the reference variable are the
+	
+	 same type.
+
+	* If both the reference variable are different types then conversion of one reference type to another is required.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+EXAMPLE 1:
+
+	Fruit          Apple(parent)  
+	  ^		 ^
+	  |		 |
+	  |              |		
+	  |              |
+	  |              |
+	Vegetable      Carrot(child)
+
+	* Fruit can be converted to Apple and Apple can be converted to fruit as well as
+	  
+	  Vegetable can be converted to Carrot and Carrot can be converted to Vegetable
+	
+	* But Fruit and apple can't be converted to Vegetable and carrot as well as Vegetable
+
+	  and carrot can't be converted to Fruit and Apple.
+_______________________________________________________________________________________________________________________________________________________________________
+EXAMPLE 2:
+
+
+	    Fruit _____	       
+		 |     |
+		 |_____|
+		 /|    |\
+		/        \
+	Apple _/___       \______ Mango
+	     |     |	   |     |
+	     |_____|       |_____|
+
+
+	* Fruit can be converted to Apple as well as Mango and Mango and Apple can be
+	
+	  converted into Fruit.
+
+	* But Apple can't be converted into Mango as well as Mango can't be converted into Apple.
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+EXAMPLE 3:
+
+We can convert A to B type, B to A type, A to C type, C to A type B to C type and
+C to B type.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+TYPES OF NON PRIMITIVE OR DERIVED TYPE CASTING
+
+	* Non primile type casting can be further dassified into two types
+
+	I. Upcasting
+	II. Downcasting
+
+NOTE :
+	* The upcasting is implicitly done by the compiler. 
+	
+	* It is also known as auto upcasting.
+
+	* Upcasting can also be done explicitly with the help of a typecast operator. 
+	
+	* Once the reference is upcasted we can't access the members of the child.
+
+_______________________________________________________________________________________________________________________________________________________________________
+Apple a = new Apple(); Fruit f = a; // Upcasting
+
+NOTE:
+
+By using 'f' we can access only the members of a Fruit (Super class)
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+WHY DO WE NEED UPCASTING?
+
+	* It is used to achieve generalization
+
+	* It helps to create a generalized container so that the reference of any type of child object can be stored
+
+EXAMPLE
+
+* genaralized variables
+
+Cab c:
+
+c= new Mini():
+
+c = new Macro():
+
+c= new Prime():
+_______________________________________________________________________________________________________________________________________________________________________
+
+DISADVANTAGE :
+
+	* There is only one disadvantage of upcasting that is, once the reference is upcasted its child members can't be used.
+NOTE:
+
+	* In order to overcome this problem, we should go for downcasting
+_______________________________________________________________________________________________________________________________________________________________________
+
+DOWNCASTING:
+
+	* The process of converting a parent (sipercas) reference you to child (subclass) reference type is known as dowcasting
+
+NOTE:
+
+	* Downcesting is not implicitly done by the compiler
+
+	* Il should be done explicitly try the programmer with the help of a typecast operate.
+
+PURPOSE OF DOWNCASTING
+
+WHY DO WE NEED A DOWNCASTING?
+
+	* If the reference is upcasted, we can't use the members of a subclass. 
+	
+	* To use the members of a subclass we need to downcast the reference to a subclass.
+_______________________________________________________________________________________________________________________________________________________________________
+
+CLASS CAST EXCEPTION
+
+ClassCastException:
+
+	* It is a Runtime Exception.
+
+	* It is a problem that occurs during runtime while downcasting.
+
+When and why do we get a ClassCastException?
+
+	* When we try to convert a reference to a specific type(class), and the object does't have ClassCastException.
+
+EXAMPLE:
+
+	Child c = (Child)new Parent(); //ClassCastException
+_______________________________________________________________________________________________________________________________________________________________________
+
+instanceof operator :
+
+	* It is a binary operator
+
+	* It is used to test if an object is of given type.
+
+	* The return type of this operator is boolean.
+
+	* If the specified object is of given type then this operator will return true else it return false.
+
+Syntax to use instance of operator :
+
+	(Object_Ref) instanceof (type)
+
+EXAMPLE: new String() instanceof Object;
+
+NOTE :
+
+There must be Is-A relation exist between Object_Ref and type passed in an instanceof operator otherwise we will get a Compile time error.
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+POLYMORPHISM
+
+	* Polymorphism is derived from two different Greek words 'Poly' means Numerous 'Morphs' means form Which means Numerous form. 
+	  
+	  Polymorphism is the ability of an object to exhibit more than one form with the same name.
+
+For Understanding :
+
+	One name  --------> Multiple forms
+
+	One variable name-> Different values
+
+	One method name---> Different behaviour
+
+TYPES OF POLYMORPHISM :
+
+	* In java we have two types of polymorphism,
+
+	1. Compile time polymorphism.
+
+	2. Runtime Polymorphism.
+_______________________________________________________________________________________________________________________________________________________________________
+
+COMPILE TIME POLYMORPHISM :
+
+	* If the binding is achieved at the compile-time and the same behavior is executed it is known as compile-time polymorphism. 
+	
+	* It is also said to be static polymorphism.
+
+NOTE:
+
+	* Binding means an association of method call to the method definition.
+
+It is achieved by :
+
+	1. Method overloading
+
+	2. constructor overloading
+
+	3. Variable shadowing
+
+	4. Method shadowing
+
+	5. Operator overloading (does not supports in java)
+_______________________________________________________________________________________________________________________________________________________________________
+
+METHOD OVERLOADING :
+	
+	* If more than one method is created with the same name but different formal argments in the same class are known as method overloading.
+	
+	Example : java.lang.Math;
+	
+	abs(double d) ------|
+	abs(float f)--------|______> Overloaded method
+	abs(int i)----------|
+	abs(long l)---------|
+	
+	there are some of the overloading 
+_______________________________________________________________________________________________________________________________________________________________________
+
+EXAMPLE:
+
+test();
+test(10);
+test(10,5t);
+test(10,10.5f);
+test(10.5f, 10);                                         
+___________
+| void test();               |
+| int test(int i);           |
+| float test(float f);       |
+| void test(int i, float f)  |
+| void test(float f, int i)  |
+|_________|
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+								METHOD SHADOWING
+
+METHOD SHADOWING:
+
+  >>If a subclass and superclass have the static method with same signature, it is known as method shadowing. 
+  >>Which method implementation gets execute, depend on what?
+  >>In method shadowing binding is done at compile time, hence it is compile time polymorphism.
+  >> The execution of the method depends on the reference type and does not depend on the type of object created.
+
+NOTE:
+
+  >>• Return type should be same or it should be co-variant return type.
+
+  >>Access modifier should be same or higher visibility than super class method.
+
+  >>Method shadowing is applicable only for the static method.
+
+  >>• It is compile time polymorphism
+  >>• Execution of implemented method depends on the reference type of an object.
+_______________________________________________________________________________________________________________________________________________________________________
+
+							VARIABLE SHADOWING
+
+VARIABLE SHADOWING:
+
+     >>If the superclass and subclass have variables with same name then it is known as variable shadowing.
+
+Which variable is used, depend on what ?
+   >>In variable shadowing binding is done at compile time, hence it is a compile time polymorphism. Variable used depends on the reference type and does not depend on the type of object created.
+
+NOTE:
+
+  >>. It is applicable for both static and non static variable.
+  >>. It is a compile time polymorphism.
+  >>• Variable usage depends on type of reference and does not depend on type of object created.
+_______________________________________________________________________________________________________________________________________________________________________
+
+								RUNTIME POLYMORPHISM
+
+RUNTIME POLYMORPHISM :
+
+  >>If the binding is achieved at the runtime then it is known as runtime polymorphism.
+
+  >> It is also known as dynamic binding.
+
+  >>It is achieved by method overriding.
+-_______________________________________________________________________________________________________________________________________________________________________
+
+								METHOD OVERRIDING
+
+METHOD OVERRIDING :
+
+  >>• If the subclass and superclass have the non static methods with same signature, it is known as method overriding.
+
+Rule to achieve method overriding :
+
+  >>• Is-A relationship is mandatory.
+
+  >>It is applicable only for non static methods.
+
+  >>The signature of the subclass method and superclass method should be same.
+
+  >>• The return type of the subclass and superclass method should be same until 1.4 version but, from 1.5 version covariant return type in overriding method is acceptable (subclass return type should be same or child to the parent class return type.)
+_______________________________________________________________________________________________________________________________________________________________________
+
+INTRODUCTION TO OBJECT CLASS
+
+Object class :
+
+  >>• Object class is defined in java.lang package.
+  >>• Object class is a supermost parent class for all the classes in java.
+  >>In object class there are 11 non static methods.
+_______________________________________________________________________________________________________________________________________________________________________
+							toString() METHOD
+
+toString()
+
+ >>.toString() method returns String.
+
+  >>.toString() implementation of Object class returns the reference of an object in the String format.
+
+Return Format: ClassName@HexaDecimal
+
+EXAMPLE:
+
+class Demo
+{
+	public static void main(String[] args) {
+        {
+		Demo d = new Demo();
+		System.out.println(d); // d.toString() Demo@21926014
+	}
+
+}
+
+NOTE :
+
+  >>• Java doesn't provide the real address of an object.
+
+  >>• Whenever programmer tries to print the reference variable toString() is implicitly called.
+_______________________________________________________________________________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+							 OVERRIDING equals(Object)
+
+PURPOSE OF OVERRIDING equals(Object):
+
+  >>We can override to equals(Object) method to compare the state of an two Objects instead of comparing reference of two Objects.
+
+NOTE:
+
+ >>• If equals(Object) method is not overridden it compares the reference of two objects similar to operator.
+
+  >>• If equals(Object) method is overridden it compares the state of two objects, in such case comparing the reference of two objects is possible only by == operator.
+
+Design tip:
+  >>In equals method compare the state of an current(this) object with the passed object by downcasting the passed object.
+_______________________________________________________________________________________________________________________________________________________________________
+
+EXAMPLE:
+
+class Book
+
+{
+
+ 	  String bname ; 
+ 	  Book(String bname)
+
+ 	 {
+
+ 		   this.bname = bname;
+
+ 	}
+	@Override
+
+	public boolean equals(Object o)
+
+	{
+
+   		Book b= (Book)o;
+
+   		if (this.bname==b.bname)
+   		return true;
+
+   		else
+
+   		return false;
+
+     }
+}
+_______________________________________________________________________________________________________________________________________________________________________
+Case 1
+
+
+Book b * 1 = new Book("Java"); 
+Book b2=b1;
+ S.o.pln(b1.bname); // Java 
+ s.o.pln(b2.br n0);// Java 
+ s.o.pln(b1==br); // true 
+ s.o.pin(b1.equals(b2)); // true
+ 
+ 
+case  2
+Book b * 1 = new Book("Java"); 
+Book b * 2 = new Book("Java"); 
+s.o.pln(b1 ); // Java 
+S.o.pln(b2.bname); // Java 
+S.o.pin(b1==b2); // false 
+s.o.pln(b1.e (b2)); // true
+_______________________________________________________________________________________________________________________________________________________________________
+
+								ABSTRACTION
+
+ABSTRACTION :
+
+  >>It is a design process of hiding the implementation and showing only the functionality (only declaration) to the user is known as abstraction.
+
+HOW TO ACHIEVE ABSTRACTION IN JAVA?
+
+  >>• In java we can achieve abstraction with the help of abstract classes and interfaces.
+
+  >>• We can provide implementation to the abstract component with the help of inheritance and method overriding.
+_______________________________________________________________________________________________________________________________________________________________________
+
+								ABSTRACT MODIFIER
+
+ABSTRACT MODIFIER :
+
+	* Abstract is a modifier, it is a keyword.
+
+	* It is applicable for methods and classes.
+
+ABSTRACT METHOD:
+
+	* A method that is prefixed with an abstract modifier is known as the abstract method.
+
+	* This is also said to be an incomplete method.
+
+	* The abstract method doesn't have a body (it has the only declaration)
+
+Syntax to create abstract method :
+
+	abstract [access modifier] return Type methodName([For_Arg]) ;
+
+NOTE:
+
+	* Only child class of that class is responsible for giving implementation to the abstract method.
+_______________________________________________________________________________________________________________________________________________________________________
+
+							ABSTRACT CLASS
+
+ABSTRACT CLASS :
+
+	* If the class is prefixed with an abstract modifier then it is known as abstract class.
+
+	* We can't create the object (INSTANCE) for an abstract class.
+
+NOTE:
+
+	* We can't instantiate an abstract class
+
+	* We can have an abstract class without an abstract method. 
+	
+	* An abstract class can have both abstract and concrete method.
+
+	* If a class has at least one abstract method either declared or inherited but not overridden it is mandatory to make that class as abstract class.
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+							INHERITANCE
+
+INHERITANCE WITH RESPECT TO INTERFACE:
+
+	* An Interface can inherit any number of interfaces with the help of extend keyword.
+
+EXAMPLE:
+	interface 11
+	{
+	}
+		interface 12 extends 11
+	{
+	}
+NOTE:
+
+	* The interface which is inheriting an interface should not give implementation to the abstract methods.
+_______________________________________________________________________________________________________________________________________________________________________
+
+EXAMPLE 1:
+
+	* Interface 11 have 3 methods
+
+		2-non static (t(),t())
+
+		1-static (t3())
+
+	* Interface 12 have 3 methods
+
+		2-inherited nors static method (t1(),t2())
+
+		1-declared non static methods (t4())
+_______________________________________________________________________________________________________________________________________________________________________
+
+EXAMPLE 2: Interface can inherit multiple interfaces at a time
+
+NOTE:
+	* With respect to interface there is no diamond problem.
+Reason,
+	* They don't have a constructors.
+
+	* Non static methods are abstract (do not have implementation)
+
+	* Static methods are not inherited.
+_______________________________________________________________________________________________________________________________________________________________________
+
+INHERITANCE OF AN INTERFACE BY THE CLASS:
+
+	* Class can inherit an interface with the help of implements keyword. • Class can inherit more than one interface.
+
+	* Class can inherit a class and an interface at a time.
+
+NOTE:
+
+	* If a class inherit an interface then it should give implementation to the abstract non static methods of an interface.
+
+	* If the class is not ready to give implementation to the abstract methods of an interface then it is mandatory to make that class as abstract class.
+
+	* Next level of child class is responsible for giving implementation to the rest of abstract methods of an interface.
+_______________________________________________________________________________________________________________________________________________________________________
+
+EXAMPLE 1: Class inheriting an interface
+
+• Interface 11 have 3 methods
+
+     2-non static (t1().12())
+     1-static ((t3))
+
+Class c1 have 3 methods
+
+     2- inherited and implemented non static method (t1(), 12())
+
+     1-declared non static methods (demo())
+_______________________________________________________________________________________________________________________________________________________________________
+
+SOLUTION FOR DIAMOND PROBLEM
+
+EXAMPLE 2: Class inheriting multiple interfaces
+
+	* The diamond problem is solved by implementing multiple interface by the class at a time.
+
+Reason,
+
+	* Non static methods are not implemented in an interface. 
+	* Static methods are not inherited.
+_______________________________________________________________________________________________________________________________________________________________________
+
+EXAMPLE 3: Class can inherit interface and class at a time
+
+RULE :
+	* Use the extends first and then implements.
+NOTE:
+	* Class can inherit multiple interface but it can't inherit multiple class at a
+time.
+	* Interface can't inherit a class.
+_______________________________________________________________________________________________________________________________________________________________________
+
+NOTE
+
+Interface can't inherit from the class
+
+	class c1
+		^
+		|
+		X
+		|
+	Interface I1
+
+Interface I1 != class c1;
+
+Reason,
+
+	* Class has concrete non static methods, So class can't be a parent to the interface
+_______________________________________________________________________________________________________________________________________________________________________
+
+									EXCEPTION
+
+EXCEPTION:
+
+	* The exception is a problem that occurs during the execution of a program (Runtime). When an exception occurs, the execution of the program stops abruptly
+	  
+	  (Unexpected stop).
+
+NOTE:
+
+	* Every exception in java is a class of 'Throwable type
+_______________________________________________________________________________________________________________________________________________________________________
+
+WHAT HAPPENS IF AN EXCEPTION OCCURS?
+
+	NORMAL EXECUTION
+	    |
+	    V			YES
+	ABNORMAL--------------------->NORMAL EXECUTION PAUSED
+	    |				|
+	    |				V
+	    NO  	      A THROWABLE TYPE OBJECT IS CREATED
+	    |		      		|
+	    |		      		V
+	    |		      		IF 
+	    |<----------YES---------EXCEPTION IS HANDLED-------NO------>ABRUPT STOP
+	    |			      		?
+	    V
+	NORMAL EXECUTION
+		|
+		V
+	       STOP		
+_______________________________________________________________________________________________________________________________________________________________________
+
+						CHECKED EXCEPTION
+
+CHECKED EXCEPTION:
+
+	* The compiler-aware exception is known as the checked exception. i.e., the Compiler knows the statement responsible for abnormal situations (Exception). 
+	  
+	  Therefore the compiler forces the programmer to either handle or declare the exception. If it is not done we will get an unreported compile-time error.
+
+Example: FileNotFoundException
+_______________________________________________________________________________________________________________________________________________________________________
+
+						UNCHECKED EXCEPTION
+
+UNCHECKED EXCEPTION:
+
+	* The compiler-unaware exception is known as the unchecked exception. i.e., the Compiler doesn't know the statements which are responsible for abnormal 
+	  
+	  situations (Exception). Hence, the compiler will not force the programmer either to handle or declare the exception.
+
+Example: Arithmetic Exception
+_______________________________________________________________________________________________________________________________________________________________________
+
+NOTE:
+
+	* In Throwable hierarchy Error class and its subclasses, RuntimeException class and its subclasses are all considered as Unchecked Exceptions.
+
+	* All the subclasses of the Exception class except RuntimeException are considered as Checked Exceptions.
+
+	* Throwable and Exception classes are partially checked and partially unchecked.
+_______________________________________________________________________________________________________________________________________________________________________
+
+							ARRAY
+
+ARRAY:
+
+	* Array is a continuous block of memory which is used to store multiple values. 
+	
+CHARACTERISTIC OF AN ARRAY :
+
+	* The size of an array must be defined at the time of declaration. Once declared the size of an array can't modified.
+
+	* Hence array is known as fixed size.
+
+	* In an array we can access the elements with the help of an index or subscript. It is an integer number that starts from 0 and ends at length of the 
+	  array-1. 
+	
+	* In an array we can store only homogeneous type value. It is a known as homogeneous collection of an object.
+_______________________________________________________________________________________________________________________________________________________________________
+
+NOTE:
+
+	In java array is an object
+
+DECLARING AN ARRAY
+
+Syntax to declare an array:
+
+	datatype[] variable; (or) datatype variable[];
+
+EXAMPLE
+
+	* int a single dimensional array reference variable of int type float single dimensional array reference variable of float type.
+
+	* String s-single ensional array reference variable of String type.
+_______________________________________________________________________________________________________________________________________________________________________                                                                   
+
+2. Generic Collection:
+
+	* It is a homogeneous collection of elements, (collection of same type of elements).
+
+    Syntax to create Generic Collection:
+
+1. Syntax to create reference variable for Generic Collection:
+
+	Collection_type< Non-primitive Datatype> variable
+
+
+ArrayList< Integer > ls ;
+_______________________________________________________________________________________________________________________________________________________________________
+
+2. Syntax to create Generic Collection Object :
+
+	new Collection_name< Datatype> ();
+
+	new ArrayList< Integer >();
+
+	ArrayList<Integer> ls = new ArrayList<Integer>(); //arraylist
+		
+		from JDK 7 onwards.
+
+	ArrayList<Integer> ls = new ArrayList<>(); 
+
+Note :
+
+	1.the elements are not converted to java.lang.Object class type,
+	
+	  instead they are tried to be converted for the given Generic Type.
+	  
+	2. The return type of the elements in Generic collection will be same as the given Generic Type
+_______________________________________________________________________________________________________________________________________________________________________
+
+Set:
+
+	1. Set is an interface, it is a sub interface of Collection, therefore all the methods of Collection is inherited.
+
+	2. Set is defined in java.util package.
+
+Characteristics Of Set :
+
+	1. it is an unordered collection of elements. (the order of insertion is lost)
+
+	2. Set does not allow duplicate elements.
+
+	3. Set does not have indexing. Therefore, we cannot access, insert or remove based on index.
+
+	4. We can access the elements of set only by using:
+
+		i. iterator() 
+		
+		ii.for each loop
+_______________________________________________________________________________________________________________________________________________________________________
+
+Concrete Implementing Classes Of Set:
+
+1. HashSet :
+
+	* it is a Concrete implementing class of Set interface. It has all the methods inherited from Collection interface.
+
+Characteristics :
+
+	1. It is unordered.
+
+	2. No Duplicates
+	
+	3. No index
+_______________________________________________________________________________________________________________________________________________________________________
+
+		HashSet()
+
+HashSet():
+
+	HashSet( Collection c)
+
+Methods:
+
+	To add an element
+
+		1.add(Object) 
+		
+		2. addAll(Collection)
+
+TO search an Element
+
+		1.contains(Object) 
+		
+		2.containsAll(Collection)
+
+To remove an element
+
+	* creates an Empty HashSet object creates an Empty HashSet object creates an HashSet and will copy all the elements of the Collection into the HashSet.
+
+	1.remove(Object o)
+
+	2.removeAll(Collection c ) 
+	
+	3.retainAll(Collection c)
+
+	4.clear()
+_______________________________________________________________________________________________________________________________________________________________________
+
+EXAMPLE 3:
+
+class Demo3
+
+{
+
+	public static void main(String[] args)
+
+{
+
+// Object
+
+	Boolean obj = false;
+
+// Converting Object to primitive value boolean b = obj.booleanValue();
+_______________________________________________________________________________________________________________________________________________________________________
+
+Maps :
+
+	* Map is a data structure, which helps the programmers to store the data in the form of key value pairs.
+
+	* Where every value is associated with a unique key.
+
+Note :
+
+	1. key cannot duplicate.
+
+	2. one key can be associated with only one value.
+
+	3. Maps helps us to access the values easily with the help of its' associated key
+_______________________________________________________________________________________________________________________________________________________________________
+
+HashMap:
+
+	* It is a concrete implementing class of Map interface.
+
+	1. data is stored in the form of key-value pair.
+
+	2. Order of insertion is not maintained.
+
+	3. key cannot be duplicate, values can be duplicate.
+	
+	4. key can be null.
+
+	5. value can be null.
+
+TreeMap:
+
+	* It is a concrete implementing class of Map interface.
+
+	1. it also stores data in key-value pair.
+	
+	2. it will sort the entries in the map with respect to keys in ascending order. 
+	
+	3.In TreeMap key cannot be null, If it is null we get NullPointerException.
+
+	4. A value in TreeMap can be null.
+_______________________________________________________________________________________________________________________________________________________________________
+								
+								String Literals
+
+String Literals
+	Anythisng enclosed within the double queue " " in java is considered as String literals
+
+Carectoristics of string Literals :
+	* When a String Litarals is used in a java program,an instance of java.lang.String class is created inside a String Pool.
+	
+	* For the given literals if the instance of the string is alredy present the new instance is not created insted the reference of existing instance is given.
+_______________________________________________________________________________________________________________________________________________________________________
+	
+								STRING
+
+STRING:
+
+	* String is a literal (data). It is a group of character that is enclosed within the double quote "".
+
+	* It is a Non primitive data.
+
+	* In java we can store a string by creating instance of the following classes.
+
+		- java.lang.String
+	
+		- java.lang.String Buffer
+	
+		- java.lang.StringBuilder
+
+	* In java, whenever we create a string compiler implicitly create an instance for java.lang.string in string pool area / string constant pool (scp).
+_______________________________________________________________________________________________________________________________________________________________________
+
+								STRING CLASS
+
+java.lang.String :
+
+	* String is a inbuill class defined in a java.lang package.
+
+	* It is a final class.
+
+	* It inherits java.lang.Object
+
+	* In a String class toString(), equals(), hashCode() methods of java.lang.Object class are overridden.
+________________________________________________________________________________________________________________________________________________________________________
+
+							CONSTRUCTOR IN STRING CLASS
+
+CONSTRUCTORS :
+
+	CONSTRUCTORS 				DESCRIPTION
+
+	String()				Creates an empty string object
+
+	String(String literals)			Creates string object by initializing with string literals
+
+________________________________________________________________________________________________________________________________________________________________________
+
+						METHODS OF STRING CLASS
+
+IMPORTANT METHODS:
+
+	RETURN TYPE        		   	METHOD 					NAMEDESCRIPTION
+
+	String					toUpperCase()				Converts the specified string to Uppercase
+
+	String					tolowerCase()				Converts the specified string to Lowercase
+
+	String					concat(String s)			joins the specified Strings
+
+	String					trim()					Remove the space present before and after the string
+
+	char					charAt(int index)			Returns character of the specified indexfrom the string
+
+	int					indexOf(char ch)			Return the index of the characterspecified if not return -1
+
+	int					length()				Returns length of the string
+
+	boolean					equals(Object o)			Compares states of a two strings
+
+	boolean					equalsignoreCase(Strings)		Compares two strings by ignoring its case
+
+	boolean					IsEmpty()				Returns true il string is emptyelse return false
+
+________________________________________________________________________________________________________________________________________________________________________
+
+						CHARACTERISTICS OF STRING
+
+CHARACTERISTIC:
+
+	* Instance of String class is immutable in nature. (Once the object is created then the state is not modified)
+
+	* If we try to manipulate (Modify) the state/data then new object is created and reference is given
+________________________________________________________________________________________________________________________________________________________________________
+
+						COMPARISON OF STRING
+
+COMPARISON OF STRING:
+
+	* ==-------------------------->Compares the reference
+
+	* equals()-------------------->Compares state/data of the object
+
+	* equalsignore Case()--------->Compares the state/data of the object by ignoring its case
+
+	* compareTo()----------------->Compares two string and returns integer value
+
+		Syntax: "String1".compareTo("String2")
+
+		* string1==string2 ------> 0
+
+		* string1> string2-------> +ve Integer
+
+		* string1<string2--------> -ve Integer
+________________________________________________________________________________________________________________________________________________________________________
+
+					DISADVANTAGE OF java.lang.String
+
+DISADVANTAGES:
+
+	* Immutability, because for every modification separate object is get created in a memory, it reduces the performance.  
+		
+NOTE:
+	* To overcome the disadvantage of String class we can go for StringBuffer and StringBuilder.
+________________________________________________________________________________________________________________________________________________________________________
+
+					STRINGBUFFER CLASS
+
+java.lang.StringBuffer:
+
+	* It is a inbuilt class defined in java.lang package.
+
+	* It is a final class.
+
+	* It helps to create mutable instance of String.
+
+	* StringBuffer does not have SCP,
+
+	* It inherits java.lang.Object class,
+
+	* In StringBuffer equals(), hashcode() methods of java.lang.Object class are not overridden.
+________________________________________________________________________________________________________________________________________________________________________
+
+					CONSTRUCTORS
+
+	CONSTRUCTORS				DESCRIPTION
+
+	StringBuffer()				Creates empty String with initial capacity 16
+
+	String Buffer(String str)		Creates string butter with thes pecified string
+________________________________________________________________________________________________________________________________________________________________________
+
+				CHARACTERISTICS OF STRINGBUFFER
+
+CHARACTERISTICS :
+
+	* It is Mutable.
+
+NOTE:
+
+	* String constant pool is not applicable to String Buffer.
+________________________________________________________________________________________________________________________________________________________________________
+
+				COMPARISON OF STRINGBUFFER
+
+COMPARISON OF STRINGBUFFER:
+
+	* == --------------------->Compares the reference.
+	
+	* equals()---------------->Compares reference of the object.
+________________________________________________________________________________________________________________________________________________________________________
+
+				DISADVANTAGE OF STRINGBUFFER
+	
+DISADVANTAGES:
+
+		-Multiple thread can't execute the StringBuffer object simultaneously because all the methods are synchronized. 
+		
+		So, Execution time is more. In order to overcome this problemn we will go for String Builder.
+
+NOTE:
+
+	* The characteristics of StringBuffer and StringBuilder are same
+________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
