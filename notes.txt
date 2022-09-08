@@ -1,8 +1,10 @@
 c:    -to change the drive 
 d:    -to change the drive
-cd    -change drive
-cd ..  -to go to previous folder
+cd    -change drive--Absolute path
+cd ..  -to go to previous folder--relative path
 cls  -to clear screen
+dir    -show directly
+mkdir  -create folder
 
 ________________________________________________________________________________________________________________________________________________________________________
 // JAVA
@@ -13,7 +15,9 @@ in class name first letter should be in upper case
 
 ________________________________________________________________________________________________________________________________________________________________________
 ///
-STRUCTURE OF JAVA PROGRAM: Java instructions are always written inside the class. class Class_Name
+STRUCTURE OF JAVA PROGRAM: Java instructions are always written inside the class. 
+
+class Class_Name
 
 {
 
@@ -33,7 +37,7 @@ NOTE:
 
 Every class in java must have a name, it is known as class name. Every class has a block, it is known as class block.
 ________________________________________________________________________________________________________________________________________________________________________
-///
+////
 
 IN CLASS BLOCK WE CAN CREATE
 
@@ -51,7 +55,9 @@ Variable is a container which is used to store data.
 
 METHODS:
 
-It is a block of instructions which is used to perform a task INITIALIZERS :
+It is a block of instructions which is used to perform a task 
+
+INITIALIZERS :
 
 Initializes are used to execute the start-up instructions.
 
@@ -980,8 +986,8 @@ JAVA RUNTIME MEMORY
 	4. Heap area
 
 	___________________________________________________________________________________
-	|		   |			     |	         	|	          |
-        |   METHOD AREA    |   CLASS STATIC AREA     |    STACK AREA    |     HEAP AREA   |               
+	|		           |			             |	            	|	              |
+    |   METHOD AREA    |   CLASS STATIC AREA     |    STACK AREA    |     HEAP AREA   |               
 	|__________________|_________________________|__________________|_________________|
                                                                                            
 
@@ -1063,7 +1069,7 @@ DEFAULT VALUES OF DATATYPES
 	* byte  	   0
 	* long  	   0
 	* double	   0.0
-	* short            0	
+	* short        0	
 ______________________________________________________________________________________________________________________________________________________________________
 
 STATIC INITIALIZER
@@ -1261,13 +1267,13 @@ EXAMPLE:
 
 			    HEAP AREA
 			________________
-			|		|	
-			|   0x1	 	|		
+			|		        |	
+			|   0x1	 	    |		
 			|  ename=|null|	|
-			|         	|
+			|         	    |
 			|  eld = |0|	|	
-			|		|
-			|		|
+			|		        |
+			|		        |
 			|_______________|
 ______________________________________________________________________________________________________________________________________________________________________
 			
@@ -1289,13 +1295,13 @@ EXAMPLE:
 				
 		            HEAP AREA	
 			________________
-			|		|	
-			|   0x1	 	|		
+			|				|	
+			|   0x1	 		|		
 			|  ename=|null|	|
-			|         	|
+			|         		|
 			|  eld = |0|	|	
-			|		|
-			|		|
+			|				|
+			|				|
 			|_______________|
 ______________________________________________________________________________________________________________________________________________________________________
 				
@@ -1641,10 +1647,6 @@ constructor.
 PURPOSE OF THE PARAMETERIZED CONSTRUCTOR :
 
 Parameterized constructors are used to initialize the variables (non-static) by accepting the data from the constructor in the object creation statement.
-
-
-
-
 
 CONSTRUCTOR BODY:
 
@@ -3081,6 +3083,51 @@ EXAMPLE
 	* String s-single ensional array reference variable of String type.
 _______________________________________________________________________________________________________________________________________________________________________                                                                   
 
+									   <<Itarable>>
+											^
+											|
+							 -------<<Collection>>--------
+							 /			  |			 	   \	
+							/			  |			 		\		
+						<<List>>	   	<<Set>>				 <<Queue>>---------------
+						|				  |						|					|
+						|-ArrayList		  |-HashSet				|					|
+						|-LinkedList	  |-LinkedHashSet	<<Dequeue>> 			|-PriorityQueue
+						|-Vector		  V						|					
+						|-Stack		<<SortedSet>>				|-ArrayDequeue		
+										  |
+										  |-TreeSet			
+
+
+________________________________________________________________________________________________________________________________________________________________________
+
+
+	List -> Interface
+	=>	insertion Order
+	=>	
+
+
+
+
+	COLLECTIONS=======>
+
+	Methods in the collection
+		add()
+		addAll()
+		remove()
+		removeAll()
+		contains()
+		containsAll()
+		isEmpty()
+		clear()
+		size()
+		get()
+
+
+		Array 		=>	length()
+		String		=>	length()
+		Collection	=>	size()
+________________________________________________________________________________________________________________________________________________________________________
 2. Generic Collection:
 
 	* It is a homogeneous collection of elements, (collection of same type of elements).
@@ -3103,9 +3150,11 @@ ________________________________________________________________________________
 
 	ArrayList<Integer> ls = new ArrayList<Integer>(); //arraylist
 		
-		from JDK 7 onwards.
+		from JDK 1.5 onwards.
 
 	ArrayList<Integer> ls = new ArrayList<>(); 
+
+	Initial capasity 10 defaultly initiated with size 10;
 
 Note :
 
