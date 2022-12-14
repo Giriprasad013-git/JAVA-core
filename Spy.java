@@ -15,7 +15,7 @@ public class Spy {
             n=n/10;
         }
         if((sum==mul)){
-            System.out.println("Spy number is ");
+            System.out.println("Spy number");
         }
         else{
             System.out.println("Not a spy number");
