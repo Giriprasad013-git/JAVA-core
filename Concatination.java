@@ -1,4 +1,4 @@
-class Concatination
+class Concatination//+
 {
 	public static void main(String args[])
 	{

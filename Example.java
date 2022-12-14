@@ -15,5 +15,5 @@ public class Example {
     }
     public static boolean m3(String s){
         return true;
-    } 
+    }
 }
