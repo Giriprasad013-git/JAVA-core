@@ -16,4 +16,4 @@ class Bag
 	{
 		return Bagbrand;
 	}
-	public 
+}

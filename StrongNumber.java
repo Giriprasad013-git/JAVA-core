@@ -2,7 +2,6 @@ public class StrongNumber {
     public static void main(String[] args) {
         int s=145;
         int fact=1;
-        int i=0;
         int sum=0;
         int temp=s;
         int rem;

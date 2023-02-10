@@ -1,3 +1,7 @@
+
+//An Armstrong number of three digits is an integer such that the sum of the 
+// cubes of its digits is equal to the number itself.ex:371,153,,;
+
 import java.util.Scanner;
 
 public class ArmstrongNo {

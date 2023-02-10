@@ -1,4 +1,4 @@
-3EY7class EorO
+class EorO
 {
 	static void Even(int L,int R)
 	{
