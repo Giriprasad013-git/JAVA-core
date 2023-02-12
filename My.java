@@ -1,8 +1,14 @@
 public class My{
     public static void main(String[] args) {
-        int o=10,i=0;
-        while(i<=o)
-            System.out.println(args[1]);
+        int o=10,i=0;            
+        System.out.println(o);
+    }
+    static{
+        System.out.println("Hello");
+    }
+
+    {
+        System.out.println("Hello2");
     }
 }
 // ans for file in the whats app at 10:37 on 09-02-2023.

@@ -16,11 +16,16 @@ public class Area {
         float area = 3.142f * redius*redius;
         return area;
     }
+    static float circumferenceOfcircle(float redius){
+        float area = 2 * 3.142f * redius;
+        return area;
+    }
     public static void main(String[] args) {
         int height = 10,base=20,redius=30,bredth=20,length=40;
         System.out.println(triangle(height, base));
         System.out.println(square(height));
         System.out.println(rectangle(length, bredth));
         System.out.println(circle(redius));
+        System.out.println(circumferenceOfcircle(redius));
     }
 }
