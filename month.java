@@ -16,7 +16,7 @@ class month
 			case 10:
 			case 12: System.out.println("31");
 				break;
-			case 4: 
+			case 4:
 			case 6:
 			case 9:
 			case 11: System.out.println("30");

@@ -4,5 +4,6 @@ public class Iff {
         if (true){
             System.out.println("If condition");
         }
+        System.out.println("main ends");
     }
 }

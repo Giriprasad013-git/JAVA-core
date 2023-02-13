@@ -1,32 +1,34 @@
 c:    -to change the drive 
 d:    -to change the drive
-cd    -change drive
+cd    -change drirectory
 cd ..  -to go to previous folder
-cls  -to clear screen
+cls  -to clear screen in cmd
 
+________________________________________________________________________________________________________________________________________________________________________
+History of JAVA: 
+
+	-> Java invented in 1991 named as greenTalk and extention given as "gt" and renamed as Oak in 1993 as extention of Oak
+	1991-->Green Talk---->gt
+	1993-->Oak       ---->oak
+	1995-->Java      ---->java
 ________________________________________________________________________________________________________________________________________________________________________
 // JAVA
 
+in class Name first letter should be in upper case
+________________________________________________________________________________________________________________________________________________________________________
 
-in class name first letter should be in upper case
-
-
+Java is the platform indipendent and it is Object oriented programming languages
 ________________________________________________________________________________________________________________________________________________________________________
 ///
-STRUCTURE OF JAVA PROGRAM: Java instructions are always written inside the class. class Class_Name
+STRUCTURE OF JAVA PROGRAM: Java instructions are always written inside the class.
 
+class Class_Name
 {
-
 	public static void main(String[] args)
-
 	{
-
 		I/Statements
-
 	}
-
 	File name: Class_Name.java
-
 }
 
 NOTE:
@@ -55,6 +57,11 @@ It is a block of instructions which is used to perform a task INITIALIZERS :
 
 Initializes are used to execute the start-up instructions.
 
+________________________________________________________________________________________________________________________________________________________________________
+Decision Making Statements :-
+
+	--> The statement which helps you to decide the order of wxecution of specific statement of your program.
+ 
 
 ////
 ________________________________________________________________________________________________________________________________________________________________________
@@ -65,22 +72,27 @@ TOKENS
   1)key words
   2)identifiers
   3)literals
-  
-  
+  4)operators
+  5)seperators	
+  6)comments
 KEY WORDS
-
+	->
 -evry time they will be there in smaller case 
 -these are predifined words we have to write as it is
 
 there are 51 key words are there in java 
 -for example  --class,public,static,void
 
+identifiers:
+	-->  name given by the programmer to element of java
+   ELEMENTS   NAME
+   class
    RULES:  IDENTIFIERS
 
 --identifiers should not start with numbers
 --program should not start with space
 --cant use any spesial charector exept underscore and doller
---we cant use key word os the aidentifier
+--we cant use keyword os the a identifier
 --programmer canot change the meening of the keywords
 
 ________________________________________________________________________________________________________________________________________________________________________  
@@ -109,7 +121,7 @@ ________________________________________________________________________________
      
    Primitive values :
    	Single value data is known as primitive values
-   	ex-Numbers,charectors,boolean
+   	ex-Numbers,charectors,boolean,string data
    	
    	Number Literals :
    	* integer number literals
@@ -124,7 +136,8 @@ ________________________________________________________________________________
    	-Boolean literals are used to write logical values
    	*true
    	*false
-   	
+   STRING DATA:
+   
 ______________________________________________________________________________________________________________________________________________________________________
  Types of primitive values 
  
@@ -184,6 +197,7 @@ DATATYPES
 PRIMITIVE DATA TYPE:
 
 The data type which is used to create a variable to store primitive value such as numbers characters, boolean is known as primitive data type.
+->data which is used to store in an single variable.
 
 NOTE:
 
@@ -192,6 +206,12 @@ All primitive data types are keyword in java.
 ________________________________________________________________________________________________________________________________________________________________________
 
   VARIABLE:
+
+  ---> variable are name given to the block of memory used to store values/literals.
+	Systax: 
+		datatype variable_name;
+
+
 
   Variable is a container which is used to store single value.
 	*Primitive variable
@@ -202,13 +222,13 @@ ________________________________________________________________________________
   	*The variable whitch is used to store a primitive value such as number,charector,boolean is known as primitive variable.
   	*We can create primitive variable with the help of primitive data type.
  
- Syntex to create primitive variable :
+  	Syntex to create primitive variable :
  	datatype identifier1,identifier2,...;
  	primitive datatype identifier1,identifier2,...;
   
   NON PRIMITIVE VARIABLE:
 	The variable whitch is used to store the a reference is known as non primitive variable.
-	It is also known as reference variable.
+	It is also known as reference variable or object variable
 	
 Syntex to create a non primitive variable :
 	Non primitive datatype identifier1,identifier2,...;
@@ -245,6 +265,12 @@ ________________________________________________________________________________
 
 	-Operators are predefined symbol which is used to perform specific task on the given data. The data given as a input to the operator is known as operand. 
 	 Based on the
+
+	10  +  20----operand
+	|	'---operator	
+	operand
+
+
 Based on the number of operand operator are further classified into the following
 
 	1)Unary operator
@@ -256,16 +282,34 @@ Based on the number of operand operator are further classified into the followin
 UNARY OPERATOR:
 
 	-The operator which can accept only one operand is known as unary operator.
+	types: Increment,Decriment and CASTING.
+	ex: i++;
+	
+		
 
 BINARY OPERATOR:
 
 	-The operator which can accept two operand is known as Binary operator.
-
+	types:
+		1) Arithmetic (+,-,*,/,%)
+		2) Relational (<,>,<=,>=,!=,==)
+		3) Logical Operator (|| ,&& ,!)
+	ex: a+b;
 TERNARY OPERATOR:
 
 	-The operator which can accept three operand is known as Termary operator
+	Systax :-     condition ? task1 : task2;
+	ex:;
+_______________________________________________________________________________________________________________________________________________________________________
+// ans for image file in the whats app at 10:37 on 09-02-2023 in class unofficial group.
 
-
+// x=24;
+// can be incremented
+// c=68;
+// m=12;
+// a=16;
+// out=30;
+// n=-25;
 _______________________________________________________________________________________________________________________________________________________________________
 CLASSIFICATION OF OPERATOR
 
@@ -304,9 +348,9 @@ There are two types of type casting:
 
 	1) Upcasting (Implicit)
 
-	2) Downcasting (Explicit)
+	2) Downcasting (Explicit)	
 
-_______________________________________________________________________________________________________________________________________________________________________
+
 PRIMITIVE TYPE CASTING :
 
 * The process of converting one primitive value into another primitive value is known as primitive type casting
@@ -318,7 +362,7 @@ WIDENING:
 * In widening process there is no data loss.
 
 * Since there is no data loss, compiler can implicitly do widening hence it i also known as auto widening.
-_______________________________________________________________________________________________________________________________________________________________________
+
 
 NARROWING:
 
@@ -334,7 +378,7 @@ TYPECAST OPERATOR:
 
 	-It is a unary operator(Only one operand)
 	-Type cast operator is used to explicitly convert one datatypo into another data type.	
-_______________________________________________________________________________________________________________________________________________________________________
+
 
 NON PRIMITIVE TYPE-CASTING (DERIVED TYPE CASTING)
 
@@ -979,9 +1023,9 @@ JAVA RUNTIME MEMORY
 	
 	4. Heap area
 
-	___________________________________________________________________________________
-	|		   |			     |	         	|	          |
-        |   METHOD AREA    |   CLASS STATIC AREA     |    STACK AREA    |     HEAP AREA   |               
+     _________________________________________________________________________________
+	|		   		   |			     		 |	         		|	          	  |
+    |   METHOD AREA    |   CLASS STATIC AREA     |    STACK AREA    |     HEAP AREA   |               
 	|__________________|_________________________|__________________|_________________|
                                                                                            
 
@@ -1103,14 +1147,12 @@ CHARACTERISTICS :
 
 	* It is global in nature, it can be used within the class as well as in different class 
 	
-	* We can use static variable with the help of the class name as well as with the help of object reference.
-
+	* We can use static variable with the help of the class name as well as with the help of object reference
+	 and directly access with the name of the static variable.
 	* We can access the static variable from different class directly with the help ofclass name.
 
 NOTE: If static variable and local variable are in same name then we can differentiate static variable with the help of class name
-
 ______________________________________________________________________________________________________________________________________________________________________
-
 
 STATIC INITIALIZER
 
@@ -1124,7 +1166,6 @@ SINGLE LINE STATIC INITIALIZER:
 	Syntax to create single line static initializers: 
 		
 		static data type variable = value / expression; 
-
 
 MULTILINE STATIC INITIALIZER:
 
@@ -1915,6 +1956,20 @@ ENCAPSULATION :
 ADVANTAGE OF ENCAPSULATION :
 
 By using encapsulation we can achieve the data hiding.
+
+Q. what is the need of encapsulation? with real time example.
+
+==> Suppose you have an account in the bank. If your balance variable is declared as a public variable in the 
+	bank software, your account balance will be known as public, In this case, anyone can know your account balance. 
+	So, would you like it? Obviously No.
+
+	So, they declare balance variable as private for making your account safe, 
+	so that anyone cannot see your account balance.
+
+	The person who has to see his account balance will have to access only private members through 
+	methods defined inside that class and this method will ask your account holder name or user Id, and password for authentication.
+
+	thus, we can achive security by utilizing the concept of data hiding. this is colled Encapsulation.
 _______________________________________________________________________________________________________________________________________________________________________
 
 DATA HIDING:
@@ -2183,7 +2238,7 @@ ________________________________________________________________________________
 . With the help of parent class reference, we can use only the members of a parent but not the child class.
 
 _______________________________________________________________________________________________________________________________________________________________________
-TERMINOLOGIES
+TERMINOLOGIES for INHERITANCE:
 
 	PARENT CLASS :
 
@@ -2247,13 +2302,12 @@ ________________________________________________________________________________
 		  
 		  In the image below, class A serves as a base class for the derived class B.
 		
-				       A
-				       /\
+				    A
+				    ^
 					|
 					|
 					|
 					B
-
 _______________________________________________________________________________________________________________________________________________________________________
 
 	2. Multilevel Inheritance: 
@@ -2265,120 +2319,18 @@ ________________________________________________________________________________
 	   	
 	   	  serves as a base class for the derived class C. In Java, a class cannot directly access the grandparent’s members.
 
-
-
-					A
+					 A
 					/\
 					 |
 					 |
 					 |
 					 B
-					 /\
+					/\
 					 |
 					 |
 					 |
 					 C
-					 |
-					 
-					 |
-					 
-_______________________________________________________________________________________________________________________________________________________________________								
-
-	3. Hierarchical Inheritance: 
-		* In Hierarchical Inheritance, one class serves as a 
-		
-		  superclass (base class) for more than one subclass. In the below image, class A 
-	   
-	  	  serves as a base class for the derived class B & C.
-
-
-
-					A
-					^
-				       /  \
-				      /    \
-				      B     C
-
-_______________________________________________________________________________________________________________________________________________________________________
-
-	4. Multiple Inheritance (Through Interfaces): 
-	
-		* In Multiple inheritances, one class can have 
-	
-		  more than one superclass and inherit features from all parent classes. Please note that Java 
-	
-		  does not support multiple inheritances with classes. In java, we can achieve multiple inheritances 
-	
-		  only through Interfaces. In the image below, Class C is derived from interface A and B.
-
-
-					A     B
-					\     /
-					 \   /
-					  \ /
-					   V
-					   C
-					   
-	NOTE:
-
-	* Multiple inheritance has a problem known as the diamond problem. Because of the 
-	
-	  diamond problem, we can't achieve multiple inheritance with the help of class.
-
-	* In java, we can achieve multiple inheritance with the help of an interface.
-
-_______________________________________________________________________________________________________________________________________________________________________
-
-DIAMOND PROBLEM:
-
-  >>Assume that there are two classes A and B. Both are having the method with the same signature. 
-  
-    If class C inherits A and B then these two methods are inherited to C.
-
-  >>Now an ambiguity arises when we try to call the super class method with the the help of subclass reference.
-  
-  >>This problem is known as the diamond problem.
-_______________________________________________________________________________________________________________________________________________________________________
-
-	5. Hybrid Inheritance(Through Interfaces): 
-		* It is a mix of two or more of the above types of inheritance. 
-	
-		  Since java doesn’t support multiple inheritances with classes, hybrid inheritance is also not possible with classes. 
-	    
-		  In java, we can achieve hybrid inheritance only through Interfaces.
-		
-		A _____	       
-		 |     |
-		 |_____|
-		/      \
-	 B     /        \
-	_____ /          \ _____C
-       |     |            |     |
-       |_____|		  |_____|    
-             \            /
-               \         /
-                 \ _____/	       
-		  |     |
-		  |_____|
-		  D
-_______________________________________________________________________________________________________________________________________________________________________
-
-
-
-
-
-UNDERSTANDING REFERENCE VARIABLE:
-
-	* One object can be referred to with multiple reference variables. 
-	
-	* We can copy the reference of one object into multiple reference variables.		
-
-EXAMPLE:
-
-	class Student
-
-	{
-		String sname;
+			??>>>>>>>>>>>>>>>>>>?
 	}
 
 	Student s1 = new Student();
@@ -2389,25 +2341,20 @@ EXAMPLE:
 
 NOTE:
 
-	* We can access the members of the Student object by using s1 or $2 or s3. [The state of the object can be modified by using any of the reference variables.]
-
+	* We can access the members of the Student object by using s1 or $2 or s3. [The state of the object can be modified by using any of the reference variables.
 _______________________________________________________________________________________________________________________________________________________________________
 
 NOTE:
 
-	* We can copy the reference from one variable to another variable only if both the reference variable are the
-	
-	 same type.
+	* We can copy the reference from one variable to another variable only if both the reference variable are the same type.
 
 	* If both the reference variable are different types then conversion of one reference type to another is required.
-
-_______________________________________________________________________________________________________________________________________________________________________
 
 EXAMPLE 1:
 
 	Fruit          Apple(parent)  
-	  ^		 ^
-	  |		 |
+	  ^		 		 ^
+	  |		 		 |
 	  |              |		
 	  |              |
 	  |              |
@@ -2420,35 +2367,26 @@ EXAMPLE 1:
 	* But Fruit and apple can't be converted to Vegetable and carrot as well as Vegetable
 
 	  and carrot can't be converted to Fruit and Apple.
-_______________________________________________________________________________________________________________________________________________________________________
+
 EXAMPLE 2:
 
+	    Fruit      _____	       
+			      |     |
+			  	  |_____|
+			 	 /       \
+				/         \
+	Apple _____/       	   \_____ Mango
+	     |     |	       |     |
+	     |_____|           |_____|
 
-	    Fruit _____	       
-		 |     |
-		 |_____|
-		 /|    |\
-		/        \
-	Apple _/___       \______ Mango
-	     |     |	   |     |
-	     |_____|       |_____|
-
-
-	* Fruit can be converted to Apple as well as Mango and Mango and Apple can be
-	
-	  converted into Fruit.
+	* Fruit can be converted to Apple as well as Mango and Mango and Apple can be converted into Fruit.
 
 	* But Apple can't be converted into Mango as well as Mango can't be converted into Apple.
-
-
 _______________________________________________________________________________________________________________________________________________________________________
 EXAMPLE 3:
 
-We can convert A to B type, B to A type, A to C type, C to A type B to C type and
-C to B type.
-
+	We can convert A to B type, B to A type, A to C type, C to A type B to C type and C to B type.
 _______________________________________________________________________________________________________________________________________________________________________
-
 TYPES OF NON PRIMITIVE OR DERIVED TYPE CASTING
 
 	* Non primile type casting can be further dassified into two types
@@ -2464,15 +2402,12 @@ NOTE :
 	* Upcasting can also be done explicitly with the help of a typecast operator. 
 	
 	* Once the reference is upcasted we can't access the members of the child.
-
 _______________________________________________________________________________________________________________________________________________________________________
 Apple a = new Apple(); Fruit f = a; // Upcasting
 
 NOTE:
 
 By using 'f' we can access only the members of a Fruit (Super class)
-
-
 _______________________________________________________________________________________________________________________________________________________________________
 WHY DO WE NEED UPCASTING?
 
@@ -3425,6 +3360,120 @@ NOTE:
 
 	* The characteristics of StringBuffer and StringBuilder are same
 ________________________________________________________________________________________________________________________________________________________________________
+
+1. What is class?
+	-> 	A class is a blueprint or template for creating objects (instances of a class).
+
+2. what is object or instance of class?
+	-> An object or instance of a class is a specific realization of the class, 
+		with its own unique set of data and behavior.
+
+3. Whats is Global variables, how it is different from local variables.
+	-> 	Global variables are variables that are accessible from anywhere in the code, 
+		regardless of where they are defined.
+
+4. What is static variable? explain.
+	-> 	Static variables are variables that are shared by all instances of a class and 
+		are stored in the class itself, rather than in each individual instance. 
+		They are also referred to as class variables.
+
+5. What is the non static variables or instance variables? explain.
+	-> 	Non-static variables, also known as instance variables, are unique to each instance 
+		of a class and are stored in the individual objects, and will be exicuted when the object is colled.
+
+6. how to access the static members? Explain.
+	-> Static members of a class can be accessed using the class name followed by the dot operator and
+		 the name of the static member. For example: ClassName.staticMember.
+
+7. How to access the non-static members of the class? explain.
+	-> Non-static members of a class can be accessed by first creating an instance of the class 
+		and then using the dot operator to access the member. For example: objectName.nonStaticMember.
+
+8. How to create the instance of the class? Explain.
+	-> Instance of class can be created using the "new" operator followed by the class name and constructor. 
+		Example: ClassName objectName = new ClassName();
+
+9. What are the difference between the static and non-static members of the class.
+	-> Static members belong to the class itself, while non-static members belong to each instance 
+		of the class. Static members can be accessed without creating an instance of the class, 
+		while non-static members require an instance.
+
+10. Give exa,ple when to use static variables and non-static variables
+	-> Static variables are best used for values that are the same across all instances of a class, 
+		such as a constant or a counter. Non-static variables are best used for values that are 
+		unique to each instance, such as a name or age.
+ 
+ 11. What is the reference variables? and how to create it?
+	-> Reference variables are variables that refer to an object, rather than holding the 
+		object's data directly. To create a reference variable, you first create an instance 
+		of a class and then assign it to a reference variable. 
+		Example: ClassName objectName = new ClassName(); 
+				 ClassName referenceVariable = objectName;
+
+12.  What is primitive variables in java? how to declare it? 
+	-> Primitive variables are basic data types in Java, such as int, float, char, double, short, byte, long, boolean. 
+		They can be declared using the data type followed by a variable name. Example: int x;
+
+13. What is non-primitive variables in Java? how to declare it?
+	-> Non-primitive variables are objects, arrays, or other complex data types in Java. 
+		They can be declared using the class name followed by a reference variable name. 
+		Example: ClassName objectName = new ClassName();
+
+14. Explain how many ways Global variables can be initialized?
+	-> Global variables, also known as class variables or static variables, can be initialized in a 
+		few different ways in Java:
+		* By assigning a value at the time of declaration.
+		* By using an initializer block.
+		* By using a static method.
+
+15. Explain static blocks and non-static blocks.
+	-> Static blocks are blocks of code that are executed only once when the class is 
+		loaded into the memory, and are used to initialize static variables. 
+	   Non-static blocks are blocks of code that are executed every time an object of 
+		the class is created, and are used to initialize non-static variables.
+
+16. what is the cunstructor and why it is required.
+	-> Constructors are special methods in Java that are used to create objects of a class. 
+		They are required because they are automatically called when an object is created, 
+		allowing the programmer to set initial values for the object's attributes.
+
+17. Does every class has constructor?
+	-> No, not every class has a constructor. If a class doesn't explicitly define a constructor, 
+		then Java will automatically generate a default constructor for the class.
+
+18. What is default cunstructor?
+	-> The default constructor is a constructor that is automatically generated by Java if a 
+	class doesn't explicitly define a constructor. The default constructor takes no arguments 
+	and doesn't perform any actions.
+
+19. What is parameterized cunstructor?
+	-> A parameterized constructor is a constructor that takes one or more arguments, and is used to 
+		initialize objects of a class with specific values. For example, you could create a parameterized 
+		constructor for a Person class that takes name and age as arguments and sets the corresponding 
+		attributes of the object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

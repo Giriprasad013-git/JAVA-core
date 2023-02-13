@@ -1,16 +1,12 @@
 public class Vote {
     public static void main(String[] args) {
-        if (true) {
-            if (true) {
-                if (true) {
-                    if (true) {
-                        System.out.println("4 th if block");
-                    }
-                    else{
-                        System.out.println("inner else block");
-                    }
-                }
-            }
+        int i=19;
+        if (i>18) {
+             System.out.println("Eligible for voting");
+        }
+        else{
+            System.out.println("Eligible for voting");
         }
     }
 }
+

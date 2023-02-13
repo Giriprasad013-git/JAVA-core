@@ -11,14 +11,9 @@ public class PalindromeInt {
         int ss=0;
         while(num>0){
             rev=num%10;
-            System.out.println(rev);
-            if(rev%2==0){
-                ss+=rev;
-            }
             sum=(sum*10)+rev;
             num=num/10;
         }
-        System.out.println("The Even num sum is "+ss);
         if(temp==sum){
             System.out.println("palindrome");
         }
