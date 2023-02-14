@@ -3,8 +3,7 @@ class Sim1
 {
 	String serviceprovidor;
 	String color;
-	long simNo;
-	Sim1(){}
+	long simNo;	
 	Sim1(String serviceprovidor,String color,long simNo)
 	{
 		this.serviceprovidor=serviceprovidor;
